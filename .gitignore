@@ -39,6 +39,7 @@ $RECYCLE.BIN/
 *.msp
 client/node_modules/
 server/node_modules/
+common/node_modules/
 
 # Windows shortcuts
 *.lnk

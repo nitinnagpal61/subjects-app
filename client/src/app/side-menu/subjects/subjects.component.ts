@@ -1,49 +1,47 @@
-import { Component, OnInit, ViewChild, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatPaginator } from '@angular/material/paginator';
 import { Observable } from 'rxjs';
 import { MatTableDataSource } from '@angular/material/table';
 import { SubjectsService } from './subjects.service';
+import { Subject } from '../../../../../common/index';
 
 @Component({
   selector: 'app-subjects',
   templateUrl: './subjects.component.html',
   styleUrls: ['./subjects.component.scss']
 })
-export class SubjectsComponent implements OnInit {
+export class SubjectsComponent implements OnInit, OnDestroy {
   collapsed: boolean = true;
   layoutStyle: string = 'row wrap';
   layoutGap: string = '10px';
-  
-  constructor(private router: Router, private subjectsService: SubjectsService, private changeDetectorRef: ChangeDetectorRef) { }
-
-  subjects = [];
+  subjects: Subject[] = [];
   @ViewChild(MatPaginator) paginator: MatPaginator;
   obs: Observable<any>;
   dataSource: MatTableDataSource<any>;
+  
+  constructor(private router: Router, private subjectsService: SubjectsService, private changeDetectorRef: ChangeDetectorRef) { }
 
   ngOnInit() {
-    this.subjectsService.getSubjects().subscribe((subjects: any) => {
+    this.subjectsService.getSubjects().subscribe((subjects: Subject[]) => {
       this.subjects = subjects;
       this.dataSource = new MatTableDataSource<any>(subjects);
       this.changeDetectorRef.detectChanges();
       this.dataSource.paginator = this.paginator;
       this.obs = this.dataSource.connect();
     });
-    
   }
 
-  // tslint:disable-next-line: use-lifecycle-interface
   ngOnDestroy() {
     if (this.dataSource) {
       this.dataSource.disconnect();
     }
   }
-  onSubjectClicked(subject) {
+  onSubjectClicked(subject: Subject) {
     this.router.navigateByUrl(`/actual-subject-card/${subject.id}`);
   }
 
-  onCollapse(subject) {
+  onCollapse(subject: Subject) {
     this.subjects.find(x => x === subject).collapsed = true;
     this.layoutStyle = 'row wrap';
     this.layoutGap = '10px';
@@ -53,5 +51,4 @@ export class SubjectsComponent implements OnInit {
   onExpand(subject) {
     this.subjects.find(x => x === subject).collapsed = false;
   }
-
 }

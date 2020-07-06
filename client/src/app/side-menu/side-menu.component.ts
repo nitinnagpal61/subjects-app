@@ -1,34 +1,25 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
-
-export interface NavLink {
-  name: string;
-  isVisible: boolean;
-  route: string;
-}
-
+import { NavLink } from '../../../../common/index';
+import { SideMenuService } from './side-menu.service';
 @Component({
   selector: 'app-side-menu',
   templateUrl: './side-menu.component.html',
   styleUrls: ['./side-menu.component.scss']
 })
-export class SideMenuComponent {
+export class SideMenuComponent implements OnInit {
+
   showFiller = false;
   @ViewChild('drawer') drawer: MatDrawer;
-  navLinks: NavLink[] = [
-    { name: 'Additional Inv. Info.', isVisible: false, route: 'additionalinvinfo'},
-    { name: 'Subjects', isVisible: true, route: 'subjects'},
-    { name: 'Accounts', isVisible: false, route: 'accounts'},
-    { name: 'Financial Records', isVisible: false, route: 'financialrecords'},
-    { name: 'Contacted Agencies', isVisible: false, route: 'contactedagencies'},
-    { name: 'HRCQ', isVisible: false, route: 'hrcq'},
-    { name: 'Associated Inv. Items', isVisible: false, route: 'associatedinvitems'},
-    { name: 'Form Filler', isVisible: false, route: 'formfiller'},
-    { name: 'Additional Information', isVisible: false, route: 'additionalinformation'},
-    { name: 'Corporate Investigations', isVisible: false, route: 'corporateinvestigations'},
-    { name: 'Suspicious Activity', isVisible: false, route: 'suspiciousactivity'},
-  ];
+  navLinks: NavLink[] = [];
 
+  constructor(private sideMenuService: SideMenuService) {}
+
+  ngOnInit(): void {
+    this.sideMenuService.getLinks().subscribe((navLinks: NavLink[]) => {
+      this.navLinks = navLinks;
+    });
+  }
 
   onNavigate(nav: NavLink) {
     this.navLinks.forEach(n => n.isVisible = false);

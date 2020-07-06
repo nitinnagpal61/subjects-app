@@ -1,10 +1,9 @@
-import { Subject } from '../common/models/subject.model';
-import { SubjectDetails } from '../common/models/subject-details.model';
-
+import { Subject, SubjectDetails, NavLink} from '../common/index';
 const express = require('express');
 const cors = require('cors');
 const subjects =  require('./data/subjects.json');
-const subjectsDetails =  require('./data/subjects-details.json'); 
+const subjectsDetails =  require('./data/subjects-details.json');
+const navLinks = require('./data/nav-links.json'); 
 
 // Create a new express application instance
 const app = express();
@@ -15,12 +14,16 @@ const corsOptions = {
   }
 
 app.get('/subjects', cors(corsOptions), function (req, res) {
-  res.send(subjects as Subject); 
+  res.send(subjects as Subject[]); 
 });
 
 app.get('/subjects/:id', cors(corsOptions), function (req, res) {
     const subjectDetails = subjectsDetails.find(sd => sd.id === parseInt(req.params.id));
     res.send(subjectDetails as SubjectDetails); 
+});
+
+app.get('/navlinks', cors(corsOptions), function (req, res) {
+  res.send(navLinks as NavLink[]); 
 });
 
 app.listen(3000, function () {
