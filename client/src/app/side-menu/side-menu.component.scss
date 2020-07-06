@@ -22,7 +22,7 @@
   }
 
   .item-selected {
-      background-color: #212121;
+      background-color: rgb(104, 154, 213);
   }
 
   .item-not-selected {
@@ -55,6 +55,9 @@
 
 .mat-list-base .mat-list-item, .mat-list-base .mat-list-option  {
   height: 38px;
+  font-family: 'Arial Bold', 'Arial';
+  min-height: 28px;
+  font-weight: bold;
 }
 
 .mat-drawer-content {
