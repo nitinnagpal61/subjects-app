@@ -1,0 +1,84 @@
+<div class="subjects-title" fxLayout="row" fxLayoutGap="auto">
+    <div class="subjects-title-text" fxLayout="col">Subjects</div>
+    <div class="subject-bttns" fxLayout="col" fxLayoutGap="8px">
+        <button mat-raised-button class="crud-bttn">
+            <mat-icon svgIcon="note-add"></mat-icon>
+            Add
+        </button>
+        <button mat-raised-button class="crud-bttn">
+            <mat-icon svgIcon="edit"></mat-icon>
+            Edit
+        </button>
+        <button mat-raised-button class="crud-bttn">
+            <mat-icon svgIcon="delete"></mat-icon>
+            Remove
+        </button>
+        <button mat-raised-button class="crud-bttn"> 
+            <mat-icon svgIcon="search"></mat-icon>
+            Search - ActOne
+        </button>
+
+    </div>
+    <div class="paginator-bttn" fxLayout="col" fxLayoutGap="8px">
+        <mat-paginator class="paginator" [pageSizeOptions]="[10, 10]"></mat-paginator>
+    </div>
+</div>
+
+<div class="card-list" [fxLayout]="layoutStyle" [fxLayoutGap]="layoutGap">
+
+    <mat-card class="subjects-card" *ngFor="let subject of obs | async" (click)="onExpand(subject)"
+    [ngStyle]="{'width': subject.collapsed ? '15%' : '100%'}">
+        
+       
+        <ng-template [ngIf]="!subject.collapsed">
+            <!-- <div fxLayout="row"> -->
+                    <app-actual-subject-card [id]="subject.id" (collapse)="onCollapse(subject)"></app-actual-subject-card>
+                <!-- <div class="close-fullscreen-col">
+                    <button class="search-bttn" mat-icon-button (click)="onCollapse(subject)">
+                        <mat-icon class="close-fullscreen-icon" svgIcon="close_fullscreen"></mat-icon>
+                    </button>
+                </div> -->
+            <!-- </div> -->
+        </ng-template>
+
+        <ng-template [ngIf]="subject.collapsed">
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Name:</mat-card-title>
+                <mat-card-subtitle>{{subject.name}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Role:</mat-card-title>
+                <mat-card-subtitle>{{subject.role}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Subject Type:</mat-card-title>
+                <mat-card-subtitle>{{subject.type}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>SSN:</mat-card-title>
+                <mat-card-subtitle>{{subject.ssn}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Address:</mat-card-title>
+                <mat-card-subtitle>{{subject.address}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>City:</mat-card-title>
+                <mat-card-subtitle>{{subject.city}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Zip:</mat-card-title>
+                <mat-card-subtitle>{{subject.zip}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Phone:</mat-card-title>
+                <mat-card-subtitle>{{subject.phone}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Source:</mat-card-title>
+                <mat-card-subtitle>{{subject.source}}</mat-card-subtitle>
+            </div>
+        </ng-template>
+
+    </mat-card>
+</div>
