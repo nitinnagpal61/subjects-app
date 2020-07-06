@@ -12,7 +12,7 @@ const rangeLabel = (page: number, pageSize: number, length: number) => {
         Math.min(startIndex + pageSize, length) :
         startIndex + pageSize;
 
-    return `Items ${startIndex + 1} - ${endIndex} (Results: ${length})`;
+    return `${startIndex + 1} - ${endIndex} (Of: ${length})`;
   };
 
 export function getCustomPaginator() {
