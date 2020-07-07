@@ -1,0 +1,32 @@
+[
+    {
+        "assignedOn": "",
+        "createdBy": "admin",
+        "updatedOn": "06/09/2020",
+        "updatedBy": "Ramesh SarvePalli",
+        "stampStatus": "",
+        "riskScore": 0,
+        "invScore": 100,
+        "priorityScore": 50,
+        "invPriority": "High",
+        "summary": "test",
+        "businesUnit": "FIU Survelliance",
+        "createdByUserID": "",
+        "dispositionedBy": "",
+        "decisionDate": "",
+        "invStartedOn": "",
+        "decisionBy": "",
+        "reporttoGADBF": "",
+        "lCRLetterRequired": "",
+        "dateUFOSubmitted": "",
+        "investigationType": "Case...",
+        "alertedAccountNO": "",
+        "invCategory": "DAEPP",
+        "invInitiatedByWCASTN": "",
+        "scenarioDescription": "",
+        "stampSource": "",
+        "subType": "Referral",
+        "recentSARFilingType": "",
+        "dateDetected": "06/09/2020"
+    }
+]

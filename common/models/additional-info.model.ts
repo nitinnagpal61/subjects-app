@@ -1,0 +1,30 @@
+export interface AdditionalInfo {
+    assignedOn: string;
+    createdBy: string;
+    updatedOn: string;
+    updatedBy: string;
+    stampStatus: string;
+    riskScore: number;
+    invScore: number;
+    priorityScore: number;
+    invPriority: string;
+    summary: string;
+    businesUnit: string;
+    createdByUserID: string;
+    dispositionedBy: string;
+    decisionDate: string;
+    invStartedOn: string;
+    decisionBy: string;
+    reporttoGADBF: string;
+    lCRLetterRequired: string;
+    dateUFOSubmitted: string;
+    investigationType: string;
+    alertedAccountNO: string;
+    invCategory: string;
+    invInitiatedByWCASTN: string;
+    scenarioDescription: string;
+    stampSource: string;
+    subType: string;
+    recentSARFilingType: string;
+    dateDetected: string;
+}

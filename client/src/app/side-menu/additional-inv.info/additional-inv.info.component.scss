@@ -1,0 +1,85 @@
+.back-bttn {
+    padding: 1rem 2rem;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.card-details {
+    // padding: 0 1rem;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+:host ::ng-deep {
+    mat-ink-bar {
+    display: none;
+    }
+}
+
+.subject-label {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.mat-card-title {
+    font-size: 12px;
+    font-family: Arial;
+    margin-bottom: unset;
+}
+
+.mat-card-subtitle {
+    margin-top: unset;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: unset;
+}
+
+.phone-divider {
+    left: 16px;
+    top: 35px;
+    width: 97%;
+}
+
+.email-divider {
+    left: 16px;
+    top: 93px;
+    width: 97%;
+}
+
+.document-divider {
+    left: 16px;
+    top: 133px;
+    width: 97%;
+}
+
+.address-divider {
+    left: 16px;
+    top: 34px;
+    width: 97%;
+}
+
+.mat-badge {
+    width: 0;
+    top: 10px;
+}
+
+.landmark {
+    padding-left: 2rem;;
+}
+
+.mat-raised-button {
+    cursor: pointer;
+}
+
+mat-card {
+    margin-right: 0 !important;
+    padding: 13px !important;
+    min-width: 46% !important;
+    box-shadow: unset !important;
+}
+
+.address-col {
+    padding-bottom: 0.25rem;
+}
