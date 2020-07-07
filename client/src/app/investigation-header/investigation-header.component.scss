@@ -9,6 +9,7 @@
   mat-card {
     width: 100%;
     background: #f6f7f7;
+    
     padding: 5px;
   }
 
@@ -19,7 +20,8 @@
     font-family: Arial;
   }
 
-  .mat-expansion-panel-header, .mat-expansion-panel-header:hover {
+  .mat-expansion-panel-header,
+  .mat-expansion-panel-header:hover {
     height: 15px !important;
     background-color: #f6f7f7 !important;
   }
@@ -30,7 +32,6 @@
     padding-bottom: 0;
   }
 
-  
   .mat-expansion-indicator {
     display: inline-block;
     padding: 5px;
@@ -46,7 +47,16 @@
 }
 
 .ellipsis-bttn {
-  height: 27px;
-  line-height: 27px;
+  height: 24px;
+  line-height: 0px;
+  min-width: 40px;
+  top: 14px;
+  left: -4px;
 }
 
+h5 {
+  font-family: Arial;
+  text-align: left;
+  color: rgba(0,0,0,.54);
+  margin: 0px 5px 2px;
+}
