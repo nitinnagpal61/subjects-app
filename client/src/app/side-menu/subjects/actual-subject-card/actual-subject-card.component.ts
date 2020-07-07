@@ -10,7 +10,7 @@ import { SubjectsService } from '../subjects.service';
 export class ActualSubjectCardComponent implements OnInit {
   subject: any;
   @Input() id: number;
-  @Output() collapse = new EventEmitter();
+  // @Output() collapse = new EventEmitter();
 
   constructor(private router: Router, private subjectsService: SubjectsService, private route: ActivatedRoute) { }
 
@@ -21,6 +21,6 @@ export class ActualSubjectCardComponent implements OnInit {
   }
 
   onCollapse() {
-    this.collapse.emit();
+    // this.collapse.emit();
   }
 }

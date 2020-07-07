@@ -6,6 +6,12 @@ import { MatTableDataSource } from '@angular/material/table';
 import { SubjectsService } from './subjects.service';
 import { Subject } from '../../../../../common/index';
 
+export interface Tab {
+  label: string;
+  isClosable: boolean;
+  subject?: Subject;
+}
+
 @Component({
   selector: 'app-subjects',
   templateUrl: './subjects.component.html',
@@ -19,7 +25,11 @@ export class SubjectsComponent implements OnInit, OnDestroy {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   obs: Observable<any>;
   dataSource: MatTableDataSource<any>;
-  
+  tabs: Tab[] = [
+    { label: 'Subject', isClosable: false}
+  ];
+  selectedTab: Tab;
+
   constructor(private router: Router, private subjectsService: SubjectsService, private changeDetectorRef: ChangeDetectorRef) { }
 
   ngOnInit() {
@@ -41,14 +51,34 @@ export class SubjectsComponent implements OnInit, OnDestroy {
     this.router.navigateByUrl(`/actual-subject-card/${subject.id}`);
   }
 
-  onCollapse(subject: Subject) {
-    this.subjects.find(x => x === subject).collapsed = true;
+  onClose(tab: Tab) {
     this.layoutStyle = 'row wrap';
     this.layoutGap = '10px';
+    const previousTabindex = this.tabs.indexOf(tab, 0) + 1;
+    
+    if(previousTabindex >= 0) {
+      this.selectedTab = {...this.tabs[previousTabindex]};
+      this.tabs.splice(this.tabs.indexOf(tab), 1);
+    } else {
+      this.selectedTab = this.tabs[0];
+    }
+    
     event.stopPropagation();
   }
 
-  onExpand(subject) {
-    this.subjects.find(x => x === subject).collapsed = false;
+  onExpand(subject: Subject) {
+    // this.subjects.find(x => x === subject).collapsed = false;
+    this.tabs.unshift({
+      label: subject.name,
+      isClosable: true,
+      subject
+    });
+
+    this.selectedTab = this.tabs[0];
+  }
+
+  onSelectTab(tab: Tab) {
+    const subject = this.subjects.find(t => t === tab.subject);
+    this.selectedTab = tab;
   }
 }

@@ -34,6 +34,7 @@
     font-size: 12px;
     font-weight: bold;
     margin-bottom: unset;
+    color: unset;
 }
 
 .phone-divider {
@@ -82,4 +83,20 @@ mat-card {
 
 .address-col {
     padding-bottom: 0.25rem;
+}
+
+:host ::ng-deep {
+    .mat-tab-label {
+        color: unset;
+        font-weight: bold;
+        font-family: 'Arial Bold', 'Arial' !important;
+    }
+
+    .mat-toolbar-row, .mat-toolbar-single-row {
+        height: 40px;
+    }
+}
+
+.additional-details-row {
+    padding-top: 0.5rem;
 }

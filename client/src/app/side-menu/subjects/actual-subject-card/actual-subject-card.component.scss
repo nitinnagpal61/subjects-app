@@ -24,15 +24,20 @@
 
 .mat-card-title {
     font-size: 12px;
-    font-family: Arial;
+    font-family: 'Arial Bold', 'Arial';
     margin-bottom: unset;
 }
 
 .mat-card-subtitle {
     margin-top: unset;
-    font-family: Arial;
+    font-family: 'Arial Bold', 'Arial';
     font-size: 12px;
     margin-bottom: unset;
+}
+
+.title, .subtitle {
+    color: unset;
+    font-weight: bold;
 }
 
 
@@ -82,4 +87,16 @@ mat-card {
 
 .address-col {
     padding-bottom: 0.25rem;
+}
+
+:host ::ng-deep {
+    .mat-tab-label {
+        color: unset !important;
+        font-weight: bold !important;
+        font-family: 'Arial Bold', 'Arial' !important;
+    }
+
+    .mat-tab-label .mat-tab-label-content {
+        color: black;
+    }
 }

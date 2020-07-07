@@ -13,7 +13,7 @@
             <mat-icon svgIcon="delete"></mat-icon>
             Remove
         </button>
-        <button mat-raised-button class="crud-bttn"> 
+        <button mat-raised-button class="crud-bttn">
             <mat-icon svgIcon="search"></mat-icon>
             Search - ActOne
         </button>
@@ -23,65 +23,69 @@
         <mat-paginator class="paginator" [pageSizeOptions]="[10, 10]"></mat-paginator>
     </div>
 </div>
-<mat-tab-group>
-    <mat-tab label="Subject">
-        <div class="card-list" [fxLayout]="layoutStyle" [fxLayoutGap]="layoutGap">
 
-            <mat-card class="subjects-card" *ngFor="let subject of obs | async" (click)="onExpand(subject)"
-            [ngStyle]="{'width': subject.collapsed ? '15%' : '100%'}">
-                
-               
-                <ng-template [ngIf]="!subject.collapsed">
-                    <!-- <div fxLayout="row"> -->
-                            <app-actual-subject-card [id]="subject.id" (collapse)="onCollapse(subject)"></app-actual-subject-card>
-                        <!-- <div class="close-fullscreen-col">
-                            <button class="search-bttn" mat-icon-button (click)="onCollapse(subject)">
-                                <mat-icon class="close-fullscreen-icon" svgIcon="close_fullscreen"></mat-icon>
-                            </button>
-                        </div> -->
-                    <!-- </div> -->
-                </ng-template>
-        
-                <ng-template [ngIf]="subject.collapsed">
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-title>Name:</mat-card-title>
-                        <mat-card-subtitle>{{subject.name}}</mat-card-subtitle>
-                    </div>
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-title>Role:</mat-card-title>
-                        <mat-card-subtitle>{{subject.role}}</mat-card-subtitle>
-                    </div>
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-title>Type:</mat-card-title>
-                        <mat-card-subtitle>{{subject.type}}</mat-card-subtitle>
-                    </div>
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-title>SSN:</mat-card-title>
-                        <mat-card-subtitle>{{subject.ssn}}</mat-card-subtitle>
-                    </div>
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-title>Address:</mat-card-title>
-                        <mat-card-subtitle>{{subject.address}}</mat-card-subtitle>
-                    </div>
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-title>City:</mat-card-title>
-                        <mat-card-subtitle>{{subject.city}}</mat-card-subtitle>
-                    </div>
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-title>Zip:</mat-card-title>
-                        <mat-card-subtitle>{{subject.zip}}</mat-card-subtitle>
-                    </div>
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-title>Phone:</mat-card-title>
-                        <mat-card-subtitle>{{subject.phone}}</mat-card-subtitle>
-                    </div>
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-title>Source:</mat-card-title>
-                        <mat-card-subtitle>{{subject.source}}</mat-card-subtitle>
-                    </div>
-                </ng-template>
-        
-            </mat-card>
-        </div>
-    </mat-tab>
-  </mat-tab-group>
+<div class=tab-container>
+    <ul class="tabs clearfix">
+        <li *ngFor="let tab of tabs" (click)="onSelectTab(tab)" 
+        [ngClass]="tab?.label === selectedTab?.label || (tab?.isClosable &&  tab?.label === 'Subject') ? 'active-tab' : 'inactive-tab'">
+            <span>{{tab.label}}</span>
+            <mat-icon class="close-icon" *ngIf="tab.isClosable" (click)="onClose(tab)">close</mat-icon>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf="selectedTab === undefined || !selectedTab.isClosable" class=outer-circle>
+    <div class="card-list" [fxLayout]="layoutStyle" [fxLayoutGap]="layoutGap">
+
+        <mat-card class="subjects-card" *ngFor="let subject of obs | async" (click)="onExpand(subject)" >
+
+            <!-- <ng-template [ngIf]="subject.collapsed"> -->
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <mat-card-title>Name:</mat-card-title>
+                    <mat-card-subtitle>{{subject.name}}</mat-card-subtitle>
+                </div>
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <mat-card-title>Role:</mat-card-title>
+                    <mat-card-subtitle>{{subject.role}}</mat-card-subtitle>
+                </div>
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <mat-card-title>Type:</mat-card-title>
+                    <mat-card-subtitle>{{subject.type}}</mat-card-subtitle>
+                </div>
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <mat-card-title>SSN:</mat-card-title>
+                    <mat-card-subtitle>{{subject.ssn}}</mat-card-subtitle>
+                </div>
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <mat-card-title>Address:</mat-card-title>
+                    <mat-card-subtitle>{{subject.address}}</mat-card-subtitle>
+                </div>
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <mat-card-title>City:</mat-card-title>
+                    <mat-card-subtitle>{{subject.city}}</mat-card-subtitle>
+                </div>
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <mat-card-title>Zip:</mat-card-title>
+                    <mat-card-subtitle>{{subject.zip}}</mat-card-subtitle>
+                </div>
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <mat-card-title>Phone:</mat-card-title>
+                    <mat-card-subtitle>{{subject.phone}}</mat-card-subtitle>
+                </div>
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <mat-card-title>Source:</mat-card-title>
+                    <mat-card-subtitle>{{subject.source}}</mat-card-subtitle>
+                </div>
+            <!-- </ng-template> -->
+
+        </mat-card>
+    </div>
+</div>
+
+
+<ng-template [ngIf]="selectedTab?.subject">
+    <!-- <app-actual-subject-card [id]="subject.id" (collapse)="onCollapse(subject)">
+    </app-actual-subject-card> -->
+    <app-actual-subject-card [id]="selectedTab?.subject?.id">
+    </app-actual-subject-card>
+</ng-template>

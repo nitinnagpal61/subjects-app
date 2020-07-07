@@ -59,6 +59,8 @@
     margin-bottom: unset;
     font-family: Arial;
     font-size: 12px;
+    color: unset;
+    font-weight: bold;
 }
 
 
@@ -66,15 +68,13 @@
     margin-bottom: 5px;
     cursor: pointer;
     padding: 5px;
-    width: 100%;
+    width: 15%;
 }
 
 .card-list {
-    padding: 1rem 1rem;
+    padding: 0rem 1rem;
     font-family: Arial;
     width: 100%;
-    
-
 }
 
 .subject-bttns {
@@ -148,3 +148,125 @@
 .mat-icon {
     fill: #0074bb;
 }
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 40px;
+}
+
+.close-icon {
+    height: 19px;
+    width: 24px;
+    padding-left: 2rem;
+    font-size: 16px;
+}
+
+//chrome alike tabs
+
+body{
+    background : #efefef;
+    font : .8em sans-serif;
+    margin: 0;
+  }
+  
+  .tab-container {
+    padding: 0;
+    max-height: 35px;
+    margin-left: -23px;
+  }
+  
+  ul.tabs{
+    margin: 0;
+    list-style-type : none;
+    line-height : 35px;
+    max-height: 35px;
+    overflow: hidden;
+    display: inline-block;
+    padding-right: 20px;
+    color: black;
+  }
+  
+  ul.tabs > li.active{
+    z-index: 2;
+    background: #fff;
+  }
+  
+  ul.tabs > li.active:before{
+    border-color : transparent #efefef transparent transparent;
+  }
+  
+  
+  ul.tabs > li.active:after{
+    border-color : transparent transparent transparent #efefef;
+  }
+  
+  ul.tabs > li{
+    float : right;
+    margin-left: 1px;
+    
+    padding: 0 4px 0 25px;
+    height: 30px;
+    position : relative;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 130px;
+    max-width: 200px;
+    cursor: pointer;
+    font-family: 'Arial Bold', 'Arial';
+    font-size: 12px;
+  }
+  
+  ul.tabs > li > a{
+    display: inline-block;
+    max-width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: #222;
+  }
+  
+  ul.tabs > li:before, ul.tabs > li:after{
+    background : transparent;
+    height: 20px;
+    width: 20px;
+    // border-radius: 100%;
+    border-width: 10px;
+    top: 0px;
+    border-style : solid;
+    position : absolute;
+  }
+  
+  ul.tabs > li:before{
+    border-color : transparent #ddd transparent transparent;
+    -webkit-transform : rotate(48deg);
+    left: -23px;
+  }
+  
+  ul.tabs > li:after{
+    border-color : transparent transparent transparent #ddd;
+    -webkit-transform : rotate(-48deg);
+    right: -17px;
+  }
+  
+  /* Clear Fix took for HTML 5 Boilerlate*/
+  
+  .clearfix:before, .clearfix:after { content: ""; display: table; }
+  .clearfix:after { clear: both; }
+  .clearfix { zoom: 1; }
+
+  .card-visible {
+      visibility: visible;
+  }
+
+  .card-hidden {
+    visibility: hidden;
+  }
+
+  .active-tab {
+      background-color: white;
+      border-top-right-radius: 100px 170px;
+      border-top-left-radius: 100px 90px;
+  }
+
+  .inactive-tab {
+    background-color: inherit;
+  }
