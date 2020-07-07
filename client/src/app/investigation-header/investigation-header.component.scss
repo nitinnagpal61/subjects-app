@@ -9,7 +9,7 @@
   mat-card {
     width: 100%;
     background: #f6f7f7;
-    padding: 10px;
+    padding: 5px;
   }
 
   mat-card-subtitle {
@@ -27,6 +27,7 @@
   .mat-expansion-panel-body {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
   }
 
   
@@ -39,3 +40,13 @@
     vertical-align: baseline;
   }
 }
+
+.dialog-area {
+  border: 1px solid black;
+}
+
+.ellipsis-bttn {
+  height: 27px;
+  line-height: 27px;
+}
+

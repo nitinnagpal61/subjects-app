@@ -8,14 +8,14 @@
     }
 
     .mat-paginator-range-actions {
-        margin-right: -75px;
+        margin-right: -100px;
         .mat-icon-button {
             border: 1px solid black;
             border-radius: unset;
-            width: 28px;
-            height: 28px;
-            line-height: 28px;
-            right: 15rem;
+            width: 27px;
+            height: 25px;
+            line-height: 25px;
+            right: 10.7rem;
             box-sizing: border-box;
             position: relative;
             -webkit-user-select: none;
@@ -66,57 +66,63 @@
     margin-bottom: 5px;
     cursor: pointer;
     padding: 5px;
+    width: 100%;
 }
 
 .card-list {
     padding: 1rem 1rem;
     font-family: Arial;
+    width: 100%;
+    
+
 }
 
 .subject-bttns {
     padding: 0.5rem 1rem;
-    font-family: Arial;
+    font-family: 'Arial Bold', 'Arial';
     font-size: 12px;
-    color: blue;
     width: 100%;
     justify-content: flex-end;
+    margin-left: -180px;
+    font-weight: bold;
+    color: black;
+  
+    
+    
 }
+
+
 
 .crud-bttn {
     border-radius: unset !important;
+    margin-right: 4px !important;
 }
 
 .subjects-title {
     padding: 0.25rem 1rem;
-    font-weight: 450;
+    font-weight: bold;
     height: 50px;
 }
 
 .subjects-title-text {
     align-items: center;
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #212E36;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .mat-raised-button {
+    
     cursor: pointer;
-    height: 28px;
-    line-height: 28px;
+    height: 24px;
+    line-height: 23px;
     font-size: 11px;
+    padding: 0px 3px;
+    min-width: 47px;
 }
-
-.anchor-tag {
-    text-decoration: underline;
-    cursor: pointer;
-    color: blue;
-    padding: 0 1rem;
-    font-size: 15px;
-}
-
-.anchor-tag-div {
-    align-items: center;
-}
-
-
 
 .paginator {
     color: black;
@@ -126,15 +132,19 @@
 .paginator-bttn {
     text-align: right;
     align-items: center;
-    width: 16rem;
+    width: 64rem;
     justify-content: flex-end;
 }
 
 .close-fullscreen-icon {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 
 .close-fullscreen-col {
-    // justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.mat-icon {
+    fill: #0074bb;
 }
