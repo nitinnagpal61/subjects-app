@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatExpansionModule } from '@angular/material/expansion';
 import { MatInputModule } from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -40,6 +41,7 @@ import { SubjectsModule } from './side-menu/subjects/subjects.module';
 // import { TopBarComponent } from './top-bar/top-bar.component';
 import { getCustomPaginator } from './side-menu/subjects/paginator.provider';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { DialogComponent } from './investigation-header/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CorporateInvestigationsComponent,
     FinancialRecordsComponent,
     AssociatedInvItemsComponent,
+    DialogComponent
     // TopBarComponent,
   ],
   imports: [
@@ -81,7 +84,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     SubjectsModule,
     MatExpansionModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatDialogModule
   ],
   providers: [
     { provide: MatPaginatorIntl, useValue: getCustomPaginator() }
