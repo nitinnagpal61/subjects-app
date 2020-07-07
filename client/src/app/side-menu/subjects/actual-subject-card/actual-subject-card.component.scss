@@ -8,6 +8,7 @@
     // padding: 0 1rem;
     font-family: Arial;
     font-size: 12px;
+    
 }
 
 :host ::ng-deep {
@@ -20,7 +21,10 @@
     font-family: 'Arial Bold', 'Arial';
     font-size: 14px;
     font-weight: bold;
+    
 }
+
+
 
 .mat-card-title {
     font-size: 12px;
@@ -83,3 +87,4 @@ mat-card {
 .address-col {
     padding-bottom: 0.25rem;
 }
+

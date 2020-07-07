@@ -24,7 +24,7 @@
     </div>
 </div>
 <mat-tab-group>
-    <mat-tab label="Subject">
+    <mat-tab label="Subject" class="title">
         <div class="card-list" [fxLayout]="layoutStyle" [fxLayoutGap]="layoutGap">
 
             <mat-card class="subjects-card" *ngFor="let subject of obs | async" (click)="onExpand(subject)"
