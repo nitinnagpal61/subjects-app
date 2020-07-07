@@ -1,1 +1,160 @@
-<h2>Additional Inv. Info. Works!</h2>
+<mat-tab-group>
+    <mat-tab label="Actual Subject Card">
+        <ng-template [ngIf]="additionalInfo">
+            <div fxLayout="row" fxLayoutAlign="space-around">
+                <mat-card class="additional-info-card">
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Assigned On:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.assignedOn}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Created By:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.createdBy}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Updated On:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.updatedOn}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Updated By:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.updatedBy}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>STAMP Status:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.stampStatus}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Risk Score:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.riskScore}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Inv. Score:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.invScore}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Priority Score:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.priorityScore}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Inv. Priority:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.invPriority}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Summary:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.summary}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Business Unit:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.businesUnit}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Created By User ID:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.createdByUserID}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>P.Dispositioned By:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.dispositionedBy}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>P.Decision Date:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.decisionDate}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>S.Inv.Started On:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.invStartedOn}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>S.Decision By:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.decisionBy}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Report to GA DBF:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.reporttoGADBF}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>LCR Letter Required:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.lCRLetterRequired}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Date UFO Submitted:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.dateUFOSubmitted}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Investigation Type:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.investigationType}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Alerted Account NO:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.alertedAccountNO}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Inv. Category:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.invCategory}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Inv. Initiated by WCASTN?:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.invInitiatedByWCASTN}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Scenario Description:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.scenarioDescription}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>STAMP Source:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.stampSource}}</mat-card-subtitle>
+                    </div>
+    
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Sub-Type:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.subType}}</mat-card-subtitle>
+                    </div>
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Recent SAR Filing Type</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.recentSARFilingType}}</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="col" fxLayoutGap="auto">
+                        <mat-card-title>Date Detected:</mat-card-title>
+                        <mat-card-subtitle>{{additionalInfo.dateDetected}}</mat-card-subtitle>
+                    </div>
+                </mat-card>
+                
+                <mat-card>
+                    <mat-card-title>
+                        UFP Reference Number
+                        <a>7698101</a>
+                    </mat-card-title>
+                    <mat-card-title>LOB Primary Contact:</mat-card-title>
+                </mat-card>
+            </div>
+        </ng-template>
+
+        <ng-template [ngIf]="!additionalInfo">
+            No data found
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>

@@ -1,9 +1,11 @@
 import { Subject, SubjectDetails, NavLink} from '../common/index';
+import { AdditionalInfo } from '../common/models/additional-info.model';
 const express = require('express');
 const cors = require('cors');
 const subjects =  require('./data/subjects.json');
 const subjectsDetails =  require('./data/subjects-details.json');
 const navLinks = require('./data/nav-links.json'); 
+const additionalInfos = require('./data/additional-info.json');
 
 // Create a new express application instance
 const app = express();
@@ -24,6 +26,10 @@ app.get('/subjects/:id', cors(corsOptions), function (req, res) {
 
 app.get('/navlinks', cors(corsOptions), function (req, res) {
   res.send(navLinks as NavLink[]); 
+});
+
+app.get('/additional-info', cors(corsOptions), function (req, res) {
+  res.send(additionalInfos as AdditionalInfo[]); 
 });
 
 app.listen(3000, function () {
