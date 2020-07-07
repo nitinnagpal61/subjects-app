@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
 import { AdditionalInvInfoService } from './additional-inv.info.service';
 import { AdditionalInfo } from '../../../../../common/index';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-additional-inv.info',
@@ -8,13 +8,13 @@ import { AdditionalInfo } from '../../../../../common/index';
   styleUrls: ['./additional-inv.info.component.scss']
 })
 export class AdditionalInvInfoComponent implements OnInit {
-  additionalInfo: AdditionalInfo
-  constructor(private additionalInfoService: AdditionalInvInfoService) { }
-
+  additionalInfo: AdditionalInfo;
+  constructor(private additionalInfoService: AdditionalInvInfoService) {}
   ngOnInit(): void {
-    this.additionalInfoService.getAdditionalInfo().subscribe((additionalInfos: AdditionalInfo[]) => {
-      this.additionalInfo = additionalInfos[0];
-    });
+    this.additionalInfoService
+      .getAdditionalInfo()
+      .subscribe((additionalInfos: AdditionalInfo[]) => {
+        this.additionalInfo = additionalInfos[0];
+      });
   }
-
 }
