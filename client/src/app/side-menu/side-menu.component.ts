@@ -12,6 +12,7 @@ export class SideMenuComponent implements OnInit {
   showFiller = false;
   @ViewChild('drawer') drawer: MatDrawer;
   navLinks: NavLink[] = [];
+  selectedNav: NavLink;
 
   constructor(private sideMenuService: SideMenuService) {}
 
@@ -25,6 +26,7 @@ export class SideMenuComponent implements OnInit {
     this.navLinks.forEach(n => n.isVisible = false);
     const navLink = this.navLinks.find(n => n === nav);
     navLink.isVisible = true;
+    this.selectedNav = navLink;
   }
 
   getVisibility(navLink: string) {

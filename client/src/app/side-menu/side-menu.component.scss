@@ -8,6 +8,7 @@
   height: inherit;
   color: #f6f7f7;
   overflow-y: auto;
+  background-color: unset;
 }
 
 .navLink-visible {
@@ -19,11 +20,13 @@
 }
 
 .item-selected {
-  background-color: rgb(104, 154, 213);
+  background-color: rgb(104, 154, 213) !important;
+  color: white;
 }
 
 .item-not-selected {
-  background-color: transparent;
+  background-color: inherit !important;
+  color: black;
 }
 
 // .menu-bttn {
@@ -73,3 +76,4 @@
 .example-sidenav {
   background-color: #f6f7f7;
 }
+
