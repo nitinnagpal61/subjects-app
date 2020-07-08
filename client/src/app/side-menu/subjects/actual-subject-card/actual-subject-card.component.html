@@ -69,13 +69,16 @@
                         <mat-divider class="phone-divider"></mat-divider>
                     </div>
 
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-subtitle >{{subject.primaryPhoneNo}}</mat-card-subtitle>
+                    <div class="phone-section">
+                        <div fxLayout="col" fxLayoutGap="auto" >
+                            <mat-card-subtitle >{{subject.primaryPhoneNo}}</mat-card-subtitle>
+                        </div>
+    
+                        <div fxLayout="col" fxLayoutGap="auto">
+                            <mat-card-subtitle>{{subject.secondaryPhoneNo}}</mat-card-subtitle>
+                        </div>
                     </div>
-
-                    <div fxLayout="col" fxLayoutGap="auto">
-                        <mat-card-subtitle>{{subject.secondaryPhoneNo}}</mat-card-subtitle>
-                    </div>
+                  
 
                     <div fxLayout="col" fxLayoutGap="auto">
                         <mat-card-title class="title">Emails</mat-card-title>

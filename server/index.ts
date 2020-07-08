@@ -11,7 +11,7 @@ const additionalInfos = require('./data/additional-info.json');
 const app = express();
 
 const corsOptions = {
-    origin: 'http://localhost:4200',
+    origin: 'http://localhost:4300',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   }
 

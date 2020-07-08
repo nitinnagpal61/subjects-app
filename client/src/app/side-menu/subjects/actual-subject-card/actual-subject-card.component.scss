@@ -93,6 +93,11 @@ mat-card {
     padding-bottom: 0.25rem;
 }
 
+.phone-section {
+    overflow-y: scroll;
+    padding-bottom: 1rem;
+}
+
 :host ::ng-deep {
     .mat-tab-label {
         color: unset !important;
