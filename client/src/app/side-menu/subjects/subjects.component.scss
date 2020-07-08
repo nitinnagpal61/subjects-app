@@ -101,6 +101,7 @@
     padding: 0.25rem 1rem;
     font-weight: bold;
     height: 50px;
+    background: whitesmoke;
 }
 
 .subjects-title-text {
@@ -200,10 +201,9 @@ body{
   
   ul.tabs > li{
     float : right;
-    margin-left: 1px;
-    
+    margin-left: 0px;
     padding: 0 4px 0 25px;
-    height: 30px;
+    height: 40px;
     position : relative;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);

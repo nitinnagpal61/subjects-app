@@ -8,7 +8,7 @@
 
   mat-card {
     width: 100%;
-    background: #f6f7f7;
+    background: whitesmoke;
     
     padding: 5px;
   }
@@ -22,8 +22,8 @@
 
   .mat-expansion-panel-header,
   .mat-expansion-panel-header:hover {
-    height: 15px !important;
-    background-color: #f6f7f7 !important;
+    height: 12px !important;
+    background-color: whitesmoke !important;
   }
 
   .mat-expansion-panel-body {
@@ -34,7 +34,7 @@
 
   .mat-expansion-indicator {
     display: inline-block;
-    padding: 5px;
+    padding: 2px;
     margin-right: 50%;
     color: black;
     transform: rotate(45deg);
