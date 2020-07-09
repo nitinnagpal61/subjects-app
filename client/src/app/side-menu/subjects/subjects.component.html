@@ -29,6 +29,13 @@
         <li *ngFor="let tab of tabs" (click)="onSelectTab(tab)" 
         [ngClass]="tab?.label === selectedTab?.label || (tab?.isClosable &&  tab?.label === 'Subject') ? 'active-tab' : 'inactive-tab'">
             <span>{{tab.label}}</span>
+            <!-- <mat-icon class="dialog-box" *ngIf="" -->
+                    <!-- <div fxLayout="row" fxLayoutAlign="space-around" class="dialog-area">
+                            <h5>Case Narrative Content: Directions for Writing a Narrative Case Study..... A narrative case study is a story of a real life problem or situation that provides sufficient background data so that the problem can be analyzed and solved. A good case study is written in the form of a story.</h5>
+                            
+                            <button class="ellipsis-bttn" mat-raised-button (click)="openDialog()">...</button>
+                        </div> -->
+    
             <mat-icon class="close-icon" *ngIf="tab.isClosable" (click)="onClose(tab)">close</mat-icon>
         </li>
     </ul>
