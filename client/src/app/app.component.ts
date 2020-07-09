@@ -56,5 +56,15 @@ export class AppComponent {
       'close_fullscreen',
       sanitizer.bypassSecurityTrustResourceUrl('assets/icons/close_fullscreen-24px.svg')
     );
+
+    iconRegistry.addSvgIcon(
+      'maximize',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/maximize-24px.svg')
+    );
+
+    iconRegistry.addSvgIcon(
+      'minimize',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/minimize-24px.svg')
+    );
   }
 }

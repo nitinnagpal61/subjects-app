@@ -12,6 +12,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatExpansionModule } from '@angular/material/expansion';
 import { MatInputModule } from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -85,7 +86,8 @@ import { DialogComponent } from './investigation-header/dialog/dialog.component'
     MatExpansionModule,
     MatInputModule,
     MatFormFieldModule,
-    MatDialogModule
+    MatDialogModule,
+    DragDropModule
   ],
   providers: [
     { provide: MatPaginatorIntl, useValue: getCustomPaginator() }

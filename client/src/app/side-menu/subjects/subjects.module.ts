@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { SubjectsComponent } from './subjects.component';
 import { ActualSubjectCardComponent } from './actual-subject-card/actual-subject-card.component';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { ActualSubjectCardComponent } from './actual-subject-card/actual-subject
         }
     ])]
   ],
-  exports: [RouterModule],
-  declarations: []
+  exports: [RouterModule]
 })
 export class SubjectsModule { }

@@ -29,6 +29,8 @@
         <li *ngFor="let tab of tabs" (click)="onSelectTab(tab)" 
         [ngClass]="tab?.label === selectedTab?.label || (tab?.isClosable &&  tab?.label === 'Subject') ? 'active-tab' : 'inactive-tab'">
             <span>{{tab.label}}</span>
+            <mat-icon svgIcon="maximize" *ngIf="tab.isMaximized && !tab.isClosable" (click)="onMaximOrMinim(tab)"></mat-icon>
+            <mat-icon svgIcon="minimize" *ngIf="!tab.isMaximized && tab.isClosable" (click)="onMaximOrMinim(tab)"></mat-icon>
             <mat-icon class="close-icon" *ngIf="tab.isClosable" (click)="onClose(tab)">close</mat-icon>
         </li>
     </ul>
@@ -88,4 +90,11 @@
     </app-actual-subject-card> -->
     <app-actual-subject-card [id]="selectedTab?.subject?.id">
     </app-actual-subject-card>
+</ng-template>
+
+<ng-template [ngIf]="selectedTab?.isMaximized">
+    <div class="movable-card" cdkDrag>
+        <app-actual-subject-card [id]="selectedTab?.subject?.id" style="background-color: #f6f7f7;">
+        </app-actual-subject-card>
+    </div>
 </ng-template>

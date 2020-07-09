@@ -10,17 +10,12 @@ import { SubjectsService } from '../subjects.service';
 export class ActualSubjectCardComponent implements OnInit {
   subject: any;
   @Input() id: number;
-  // @Output() collapse = new EventEmitter();
 
-  constructor(private router: Router, private subjectsService: SubjectsService, private route: ActivatedRoute) { }
+  constructor(private subjectsService: SubjectsService) { }
 
   ngOnInit(): void {
     this.subjectsService.getSubjectDetails(this.id).subscribe(subjectDetail => {
         this.subject = subjectDetail;
     });
-  }
-
-  onCollapse() {
-    // this.collapse.emit();
   }
 }

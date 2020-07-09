@@ -10,6 +10,7 @@ export interface Tab {
   label: string;
   isClosable: boolean;
   subject?: Subject;
+  isMaximized?: boolean;
 }
 
 @Component({
@@ -80,5 +81,9 @@ export class SubjectsComponent implements OnInit, OnDestroy {
   onSelectTab(tab: Tab) {
     const subject = this.subjects.find(t => t === tab.subject);
     this.selectedTab = tab;
+  }
+
+  onMaximOrMinim(tab: Tab) {
+    tab.isMaximized = !tab.isMaximized;
   }
 }
