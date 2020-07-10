@@ -1,0 +1,105 @@
+.card-details {
+    // padding: 0 1rem;
+    font-family: Arial;
+    font-size: 12px;
+    
+}
+
+:host ::ng-deep {
+    mat-ink-bar {
+    display: none;
+    }
+}
+
+.subject-label {
+    font-family: 'Arial Bold', 'Arial';
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+
+
+.mat-card-title {
+    font-size: 12px;
+    font-family: 'Arial Bold', 'Arial';
+    margin-bottom: unset;
+}
+
+.mat-card-subtitle {
+    margin-top: unset;
+    font-family: 'Arial Bold', 'Arial';
+    font-size: 12px;
+    margin-bottom: unset;
+}
+
+.title, .subtitle {
+    color: unset;
+    font-weight: bold;
+}
+
+
+.phone-divider {
+    left: 16px;
+    top: 35px;
+    width: 97%;
+}
+
+.email-divider {
+    left: 16px;
+    top: 93px;
+    width: 97%;
+}
+
+.document-divider {
+    left: 16px;
+    top: 133px;
+    width: 97%;
+}
+
+.address-divider {
+    left: 16px;
+    top: 34px;
+    width: 97%;
+}
+
+.mat-badge {
+    width: 0;
+    top: 10px;
+}
+
+.landmark {
+    padding-left: 2rem;;
+}
+
+.mat-raised-button {
+    cursor: pointer;
+}
+
+mat-card {
+    margin-right: 0 !important;
+    padding: 13px !important;
+    min-width: 29% !important;
+    box-shadow: unset !important;
+}
+
+.address-col {
+    padding-bottom: 0.25rem;
+}
+
+.phone-section {
+    overflow-y: scroll;
+    padding-bottom: 1rem;
+}
+
+:host ::ng-deep {
+    .mat-tab-label {
+        color: unset !important;
+        font-weight: bold !important;
+        font-family: 'Arial Bold', 'Arial' !important;
+    }
+
+    .mat-tab-label .mat-tab-label-content {
+        color: black;
+    }
+}

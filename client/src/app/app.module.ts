@@ -43,6 +43,8 @@ import { SubjectsModule } from './side-menu/subjects/subjects.module';
 import { getCustomPaginator } from './side-menu/subjects/paginator.provider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { DialogComponent } from './investigation-header/dialog/dialog.component';
+import { WindowComponent } from './side-menu/subjects/window/window.component';
+import { PortalModule } from '@angular/cdk/portal';
 
 @NgModule({
   declarations: [
@@ -60,8 +62,8 @@ import { DialogComponent } from './investigation-header/dialog/dialog.component'
     CorporateInvestigationsComponent,
     FinancialRecordsComponent,
     AssociatedInvItemsComponent,
-    DialogComponent
-    // TopBarComponent,
+    DialogComponent,
+    WindowComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +89,8 @@ import { DialogComponent } from './investigation-header/dialog/dialog.component'
     MatInputModule,
     MatFormFieldModule,
     MatDialogModule,
-    DragDropModule
+    DragDropModule,
+    PortalModule
   ],
   providers: [
     { provide: MatPaginatorIntl, useValue: getCustomPaginator() }
