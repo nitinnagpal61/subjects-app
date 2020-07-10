@@ -31,6 +31,7 @@ export class SubjectsComponent implements OnInit, OnDestroy {
   ];
   selectedTab: Tab;
 
+
   constructor(private router: Router, private subjectsService: SubjectsService, private changeDetectorRef: ChangeDetectorRef) { }
 
   ngOnInit() {
@@ -83,7 +84,11 @@ export class SubjectsComponent implements OnInit, OnDestroy {
     this.selectedTab = tab;
   }
 
-  onMaximOrMinim(tab: Tab) {
-    tab.isMaximized = !tab.isMaximized;
+  onMaximize(tab: Tab) {
+    tab.isMaximized = true;
+  }
+
+  onMinimize(tab: Tab) {
+    tab.isMaximized = false;
   }
 }

@@ -26,12 +26,22 @@
 
 <div class=tab-container>
     <ul class="tabs clearfix">
-        <li *ngFor="let tab of tabs" (click)="onSelectTab(tab)" 
-        [ngClass]="tab?.label === selectedTab?.label || (tab?.isClosable &&  tab?.label === 'Subject') ? 'active-tab' : 'inactive-tab'">
+        <li *ngFor="let tab of tabs" (click)="onSelectTab(tab)"
+            [ngClass]="tab?.label === selectedTab?.label || (tab?.isClosable &&  tab?.label === 'Subject') ? 'active-tab' : 'inactive-tab'">
             <span>{{tab.label}}</span>
-            <mat-icon svgIcon="maximize" *ngIf="tab.isMaximized && !tab.isClosable" (click)="onMaximOrMinim(tab)"></mat-icon>
-            <mat-icon svgIcon="minimize" *ngIf="!tab.isMaximized && tab.isClosable" (click)="onMaximOrMinim(tab)"></mat-icon>
-            <mat-icon class="close-icon" *ngIf="tab.isClosable" (click)="onClose(tab)">close</mat-icon>
+            <button mat-icon-button *ngIf="tab.isMaximized && tab.isClosable">
+                <mat-icon svgIcon="maximize" (click)="onMinimize(tab)"></mat-icon>
+            </button>
+            <button mat-icon-button *ngIf="!tab.isMaximized && tab.isClosable">
+                <mat-icon svgIcon="minimize" (click)="onMaximize(tab)">
+                </mat-icon>
+            </button>
+            <button mat-icon-button *ngIf="tab.isClosable">
+                <mat-icon class="close-icon"  (click)="onClose(tab)">close</mat-icon>
+            </button>
+            <window *ngIf="tab?.isMaximized"  [id]="tab?.subject?.id">
+            </window>
+        
         </li>
     </ul>
 </div>
@@ -39,45 +49,45 @@
 <div *ngIf="selectedTab === undefined || !selectedTab.isClosable" class=outer-circle>
     <div class="card-list" [fxLayout]="layoutStyle" [fxLayoutGap]="layoutGap">
 
-        <mat-card class="subjects-card" *ngFor="let subject of obs | async" (click)="onExpand(subject)" >
+        <mat-card class="subjects-card" *ngFor="let subject of obs | async" (click)="onExpand(subject)">
 
             <!-- <ng-template [ngIf]="subject.collapsed"> -->
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Name:</mat-card-title>
-                    <mat-card-subtitle>{{subject.name}}</mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Role:</mat-card-title>
-                    <mat-card-subtitle>{{subject.role}}</mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Type:</mat-card-title>
-                    <mat-card-subtitle>{{subject.type}}</mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>SSN:</mat-card-title>
-                    <mat-card-subtitle>{{subject.ssn}}</mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Address:</mat-card-title>
-                    <mat-card-subtitle>{{subject.address}}</mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>City:</mat-card-title>
-                    <mat-card-subtitle>{{subject.city}}</mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Zip:</mat-card-title>
-                    <mat-card-subtitle>{{subject.zip}}</mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Phone:</mat-card-title>
-                    <mat-card-subtitle>{{subject.phone}}</mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Source:</mat-card-title>
-                    <mat-card-subtitle>{{subject.source}}</mat-card-subtitle>
-                </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Name:</mat-card-title>
+                <mat-card-subtitle>{{subject.name}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Role:</mat-card-title>
+                <mat-card-subtitle>{{subject.role}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Type:</mat-card-title>
+                <mat-card-subtitle>{{subject.type}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>SSN:</mat-card-title>
+                <mat-card-subtitle>{{subject.ssn}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Address:</mat-card-title>
+                <mat-card-subtitle>{{subject.address}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>City:</mat-card-title>
+                <mat-card-subtitle>{{subject.city}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Zip:</mat-card-title>
+                <mat-card-subtitle>{{subject.zip}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Phone:</mat-card-title>
+                <mat-card-subtitle>{{subject.phone}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Source:</mat-card-title>
+                <mat-card-subtitle>{{subject.source}}</mat-card-subtitle>
+            </div>
             <!-- </ng-template> -->
 
         </mat-card>
@@ -92,9 +102,5 @@
     </app-actual-subject-card>
 </ng-template>
 
-<ng-template [ngIf]="selectedTab?.isMaximized">
-    <div class="movable-card" cdkDrag>
-        <app-actual-subject-card [id]="selectedTab?.subject?.id" style="background-color: #f6f7f7;">
-        </app-actual-subject-card>
-    </div>
-</ng-template>
+
+    
