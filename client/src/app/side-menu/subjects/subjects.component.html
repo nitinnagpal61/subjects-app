@@ -31,6 +31,7 @@
             <span>{{tab.label}}</span>
             <mat-icon svgIcon="maximize" *ngIf="tab.isMaximized && !tab.isClosable" (click)="onMaximOrMinim(tab)"></mat-icon>
             <mat-icon svgIcon="minimize" *ngIf="!tab.isMaximized && tab.isClosable" (click)="onMaximOrMinim(tab)"></mat-icon>
+            <mat-icon svgIcon="open_in_new" *ngIf="tab.isOpen_in_new && tab.isOpen_in_new" (click)="on Open_in_new(tab)"></mat-icon>
             <mat-icon class="close-icon" *ngIf="tab.isClosable" (click)="onClose(tab)">close</mat-icon>
         </li>
     </ul>

@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SubjectsService {
 
-  private url = 'http://localhost:3000'
+  private url = 'http://localhost:3000';
   constructor(private http: HttpClient) { }
 
   getSubjects = () => this.http.get(`${this.url}/subjects`);
