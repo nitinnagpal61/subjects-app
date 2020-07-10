@@ -38,6 +38,11 @@ export class AppComponent {
     );
 
     iconRegistry.addSvgIcon(
+      'open_in_new',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/open_in_new-24px.svg')
+    );
+
+    iconRegistry.addSvgIcon(
       'edit',
       sanitizer.bypassSecurityTrustResourceUrl('assets/icons/edit-24px.svg')
     );

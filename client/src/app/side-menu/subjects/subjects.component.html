@@ -33,7 +33,7 @@
                 <mat-icon svgIcon="maximize" (click)="onMinimize(tab)"></mat-icon>
             </button>
             <button mat-icon-button *ngIf="!tab.isMaximized && tab.isClosable">
-                <mat-icon svgIcon="minimize" (click)="onMaximize(tab)">
+                <mat-icon svgIcon="open_in_new" (click)="onMaximize(tab)">
                 </mat-icon>
             </button>
             <button mat-icon-button *ngIf="tab.isClosable">
