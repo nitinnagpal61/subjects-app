@@ -71,7 +71,7 @@
 mat-card {
     margin-right: 0 !important;
     padding: 13px !important;
-    min-width: 46% !important;
+    min-width: 31% !important;
     box-shadow: unset !important;
 }
 
@@ -94,3 +94,14 @@ mat-card {
 .additional-details-row {
     padding-top: 0.5rem;
 }
+
+.investigation-links {
+    padding: 1rem 1rem 0 1.5rem;
+    color: blue;
+    text-decoration: underline;
+}
+
+.info-header {
+    padding-left: 1.5rem;
+}
+

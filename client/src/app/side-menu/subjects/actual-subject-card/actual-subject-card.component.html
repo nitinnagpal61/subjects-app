@@ -64,20 +64,31 @@
                     </div>
                 </mat-card>
                 <mat-card class="subject-details-card">
-                    <div fxLayout="col" fxLayoutGap="auto" class="phone-numbers-div">
-                        <mat-card-title class="title">Phone Numbers</mat-card-title>
-                        <mat-divider class="phone-divider"></mat-divider>
-                    </div>
-
-                    <div class="phone-section">
-                        <div fxLayout="col" fxLayoutGap="auto" >
-                            <mat-card-subtitle >{{subject.primaryPhoneNo}}</mat-card-subtitle>
+                    <div class="phone-div">
+                        <div fxLayout="col" fxLayoutGap="auto" class="phone-numbers-div">
+                            <mat-card-title class="title">Phone Numbers</mat-card-title>
+                            <mat-divider class="phone-divider"></mat-divider>
                         </div>
     
-                        <div fxLayout="col" fxLayoutGap="auto">
-                            <mat-card-subtitle>{{subject.secondaryPhoneNo}}</mat-card-subtitle>
+                        <div class="phone-section">
+                            <div fxLayout="col" fxLayoutGap="10px" >
+                                <span matBadge="1" matBadgeOverlap="false"></span>
+                                <mat-card-subtitle class="phone-title">
+                                    {{subject.primaryPhoneNo}}
+                                </mat-card-subtitle>
+                                <mat-icon class="phone-icon" svgIcon="landline"></mat-icon>
+                            </div>
+        
+                            <div fxLayout="col" fxLayoutGap="10px">
+                                <span matBadge="2" matBadgeOverlap="false"></span>
+                                <mat-card-subtitle class="phone-title">
+                                    {{subject.secondaryPhoneNo}}
+                                </mat-card-subtitle>
+                                <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
+                            </div>
                         </div>
                     </div>
+                 
                   
 
                     <div fxLayout="col" fxLayoutGap="auto">

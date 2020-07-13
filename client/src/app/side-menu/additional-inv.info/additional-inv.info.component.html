@@ -2,11 +2,17 @@
     <ng-template [ngIf]="additionalInfo">
         <div>
             <mat-toolbar>
-                <span>Additional Inv. Info</span>
-                <a>7698101</a>
+                <mat-toolbar-row class="info-header">
+                    <span>Additional Inv. Info</span>
+                    <a>7698101</a>
+                </mat-toolbar-row>
             </mat-toolbar>
             <mat-divider></mat-divider>
-            <div class="additional-details-row" fxLayout="row" fxLayoutAlign="space-around">
+            <div fxLayout="row" class="investigation-links" fxLayoutGap="2rem">
+                <a routerLinkActive="true" (click)="showInvestigationLink = true">Investigation Info</a>
+                <a (click)="showInvestigationLink = false">UFO</a>
+            </div>
+            <div *ngIf="showInvestigationLink" class="additional-details-row" fxLayout="col" >
                 <mat-card class="additional-info-card">
                     <div fxLayout="col" fxLayoutGap="auto">
                         <mat-card-title>Assigned On:</mat-card-title>
@@ -57,7 +63,9 @@
                         <mat-card-title>Summary:</mat-card-title>
                         <mat-card-subtitle>{{additionalInfo.summary}}</mat-card-subtitle>
                     </div>
-        
+                </mat-card>
+                
+                <mat-card class="additional-info-card">
                     <div fxLayout="col" fxLayoutGap="auto">
                         <mat-card-title>Business Unit:</mat-card-title>
                         <mat-card-subtitle>{{additionalInfo.businesUnit}}</mat-card-subtitle>
@@ -103,6 +111,10 @@
                         <mat-card-subtitle>{{additionalInfo.dateUFOSubmitted}}</mat-card-subtitle>
                     </div>
         
+                </mat-card>
+
+                <mat-card class="additional-info-card">
+                    
                     <div fxLayout="col" fxLayoutGap="auto">
                         <mat-card-title>Investigation Type:</mat-card-title>
                         <mat-card-subtitle>{{additionalInfo.investigationType}}</mat-card-subtitle>
@@ -147,16 +159,18 @@
                         <mat-card-subtitle>{{additionalInfo.dateDetected}}</mat-card-subtitle>
                     </div>
                 </mat-card>
-        
+            </div>
+
+            <ng-template [ngIf]="!showInvestigationLink">
                 <mat-card>
                     <mat-toolbar>
-                        <span>UFP Reference Number</span>
+                        <span>UFO Reference Number</span>
                         <a>7698101</a>
                     </mat-toolbar>
         
                     <mat-card-title>LOB Primary Contact:</mat-card-title>
                 </mat-card>
-            </div>
+            </ng-template>
             
         </div>
     </ng-template>

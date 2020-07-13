@@ -71,5 +71,15 @@ export class AppComponent {
       'minimize',
       sanitizer.bypassSecurityTrustResourceUrl('assets/icons/minimize-24px.svg')
     );
+
+    iconRegistry.addSvgIcon(
+      'landline',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/local_phone-24px.svg')
+    );
+
+    iconRegistry.addSvgIcon(
+      'mobile',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/phone_iphone-24px.svg')
+    );
   }
 }

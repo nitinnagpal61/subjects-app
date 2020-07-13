@@ -46,9 +46,9 @@
 
 
 .phone-divider {
-    left: 16px;
+    left: 13px;
     top: 35px;
-    width: 93%;
+    width: 89%;
 }
 
 .email-divider {
@@ -94,12 +94,26 @@ mat-card {
 }
 
 .phone-section {
-    overflow-y: scroll;
     padding-bottom: 1rem;
+   padding-top: 0.5rem;
+}
+
+.phone-div {
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .phone-numbers-div {
     padding-bottom: 1rem;
+}
+
+.phone-icon {
+    height: 20px;
+    width: 20px;
+}
+.phone-title {
+    margin-right: unset !important;
+    margin-left: 20px;
 }
 
 :host ::ng-deep {
