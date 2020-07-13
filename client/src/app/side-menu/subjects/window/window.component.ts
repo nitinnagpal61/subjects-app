@@ -12,10 +12,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class WindowComponent implements AfterViewInit, OnChanges {
   @Input() id: number;
+  @Input() title: string;
   @ViewChild('templatePortalContent') templatePortalContent: TemplateRef<any>;
   templatePortal: TemplatePortal<any>;
   params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
-  width=600,height=300,left=200,top=200`;
+  width=650,height=350,left=200,top=200`;
 
   private externalWindow;
 
@@ -33,7 +34,11 @@ export class WindowComponent implements AfterViewInit, OnChanges {
 
 
   ngAfterViewInit() {
-    this.externalWindow = window.open('', '', this.params );
+    this.externalWindow = window.open('', this.title, this.params );
+
+    document.querySelectorAll('link, style').forEach(htmlElement => {
+      this.externalWindow.document.head.appendChild(htmlElement.cloneNode(true));
+    });
     this.templatePortal = new TemplatePortal(this.templatePortalContent, this._viewContainerRef);
 
     // STEP 5: create a PortalHost with the body of the new window document    

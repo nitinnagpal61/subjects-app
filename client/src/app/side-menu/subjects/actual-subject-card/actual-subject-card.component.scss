@@ -48,19 +48,19 @@
 .phone-divider {
     left: 16px;
     top: 35px;
-    width: 97%;
+    width: 93%;
 }
 
 .email-divider {
     left: 16px;
-    top: 93px;
-    width: 97%;
+    top: 8rem;
+    width: 93%;
 }
 
 .document-divider {
     left: 16px;
-    top: 133px;
-    width: 97%;
+    top: 10.5rem;
+    width: 93%;
 }
 
 .address-divider {
@@ -95,6 +95,10 @@ mat-card {
 
 .phone-section {
     overflow-y: scroll;
+    padding-bottom: 1rem;
+}
+
+.phone-numbers-div {
     padding-bottom: 1rem;
 }
 
