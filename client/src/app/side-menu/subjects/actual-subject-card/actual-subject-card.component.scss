@@ -47,26 +47,35 @@
 
 .phone-divider {
     left: 13px;
-    top: 35px;
-    width: 89%;
+    top: 30.1px;
+    width: 83%;
 }
 
 .email-divider {
-    left: 16px;
-    top: 8rem;
-    width: 93%;
+    left: 13px;
+    top: 9rem;
+    width: 83%;
+
 }
 
+.email-title {
+    padding: 25px 0px 0px 0px;
+}
+
+
+.document-title {
+    padding: 25px 0px 0px 0px;
+}
 .document-divider {
-    left: 16px;
-    top: 10.5rem;
-    width: 93%;
+    left: 13px;
+    top: 14.3rem;
+    width: 83%;
 }
 
 .address-divider {
-    left: 16px;
-    top: 34px;
-    width: 97%;
+    left: 10px;
+    top: 31.8px;
+    width: 85%;
 }
 
 .mat-badge {
@@ -75,7 +84,7 @@
 }
 
 .landmark {
-    padding-left: 2rem;;
+    padding-left: 2rem;
 }
 
 .mat-raised-button {
@@ -84,27 +93,47 @@
 
 mat-card {
     margin-right: 0 !important;
-    padding: 13px !important;
-    min-width: 29% !important;
+    padding: 14px !important;
+    min-width: 25% !important;
     box-shadow: unset !important;
 }
 
 .address-col {
-    padding-bottom: 0.25rem;
+    padding-bottom: 0rem;
 }
 
 .phone-section {
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
    padding-top: 0.5rem;
+//    max-height: 50px;
 }
 
 .phone-div {
     overflow-x: hidden;
     overflow-y: scroll;
+    max-height: 60px;
+    
 }
 
+.addresses-div {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 350px;
+}
+
+.documents-div {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 145px;
+}
 .phone-numbers-div {
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
+}
+
+.emails-div {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 40px;
 }
 
 .phone-icon {
@@ -126,4 +155,25 @@ mat-card {
     .mat-tab-label .mat-tab-label-content {
         color: black;
     }
+}
+
+
+.phone-titlemain {
+    font-family: Arial Bold, Arial;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 0px;
+}
+
+
+.email-title {
+    font-family: Arial Bold, Arial;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.document-title {
+    font-family: Arial Bold, Arial;
+    font-weight: bold;
+    font-size: 12px;
 }

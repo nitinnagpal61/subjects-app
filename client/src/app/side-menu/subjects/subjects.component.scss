@@ -136,8 +136,9 @@
 }
 
 .close-fullscreen-icon {
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
 }
 
 .close-fullscreen-col {
@@ -150,16 +151,21 @@
 
 .mat-toolbar-row, .mat-toolbar-single-row {
     height: 40px;
+    
 }
 
 .close-icon {
-    height: 19px;
-    width: 24px;
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
     font-size: 16px;
 }
 
 //chrome alike tabs
 
+// .icons {
+//   width: 20px;
+// }
 body{
     background : #efefef;
     font : .8em sans-serif;
@@ -175,17 +181,19 @@ body{
   ul.tabs{
     margin: 0;
     list-style-type : none;
-    line-height : 35px;
-    max-height: 35px;
+    line-height : 30px;
+    max-height: 30px;
     overflow: hidden;
     display: inline-block;
     padding-right: 20px;
     color: black;
+    
   }
   
   ul.tabs > li.active{
     z-index: 2;
     background: #fff;
+    
   }
   
   ul.tabs > li.active:before{
@@ -201,7 +209,7 @@ body{
     float : right;
     margin-left: 1px;
     
-    padding: 0 4px 0 25px;
+    padding: 0px 0px 0px 10px;
     height: 30px;
     position : relative;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -270,10 +278,12 @@ body{
   }
 
   .subject-tab-icon {
-    fill: black;
-    height: 19px;
-    width: 24px;
-    margin-right: -3px;
+    fill: #000000;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    margin-right: 10px;
+    font-size: 12px;
   }
 
   .name-label {
