@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./additional-inv.info.component.scss']
 })
 export class AdditionalInvInfoComponent implements OnInit {
-  showInvestigationLink: boolean;
+  showInvestigationLink: boolean = true;
   additionalInfo: AdditionalInfo;
   constructor(private additionalInfoService: AdditionalInvInfoService) {}
   ngOnInit(): void {

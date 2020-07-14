@@ -27,11 +27,26 @@ mat-card {
 // }
 
 .additional-details-row {
-  padding-top: 0.5rem;
+  padding: 0.5rem 0.8rem;
 }
 
 .investigation-links {
   padding: 1rem 1rem 0 1.5rem;
-  color: blue;
+  
   text-decoration: underline;
+}
+
+.selected {
+  color: blue;
+}
+
+.unselected {
+  color: grey;
+}
+
+.ref-no {
+  font-size: 15px;
+  padding: 1rem 0.5rem;
+  text-decoration: underline;
+  color: blue;
 }

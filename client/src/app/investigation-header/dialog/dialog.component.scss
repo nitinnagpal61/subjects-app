@@ -1,0 +1,10 @@
+:host ::ng-deep {
+    .mat-icon-button {
+        border-radius: unset;
+    }
+
+    .mat-icon-button:hover {
+        background-color: red;
+        color: white;
+    }
+}

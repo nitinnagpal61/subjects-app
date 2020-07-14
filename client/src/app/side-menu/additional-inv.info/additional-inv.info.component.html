@@ -8,8 +8,10 @@
         </mat-toolbar>
         <mat-divider></mat-divider>
         <div fxLayout="row" class="investigation-links" fxLayoutGap="2rem">
-            <a routerLinkActive="true" (click)="showInvestigationLink = true">Investigation Information</a>
-            <a (click)="showInvestigationLink = false">LOB Primary Contact</a>
+            <a [ngClass]="showInvestigationLink ? 'unselected' : 'selected'"
+                (click)="showInvestigationLink = true">Investigation Information</a>
+            <a [ngClass]="!showInvestigationLink ? 'unselected' : 'selected'"
+                (click)="showInvestigationLink = false">LOB Primary Contact</a>
         </div>
         <div *ngIf="showInvestigationLink" class="additional-details-row" fxLayout="col">
             <mat-card class="additional-info-card">
@@ -142,16 +144,32 @@
         <ng-template [ngIf]="!showInvestigationLink">
             <mat-card>
                 <mat-toolbar>
-                    <span>UFO Reference Number: Content</span>
-
+                    <span>UFO Reference Number</span>
+                    <a class="ref-no">7698101</a>
                 </mat-toolbar>
 
-                <mat-card-title>LOB Primary Contact:</mat-card-title>
+                <mat-toolbar>
+                    <span>LOB Primary Contact:</span>
+                    <mat-toolbar-row>
+                        <button mat-raised-button>Add</button>
+                        <button mat-raised-button>Edit</button>
+                    </mat-toolbar-row>
+                </mat-toolbar>
+
+                <mat-toolbar>
+                    <span>Primary FIU Investigator</span>
+                    <mat-toolbar-row>
+                        <span>Primary FIU Investigator</span>
+                    </mat-toolbar-row>
+                    <mat-toolbar-row>
+                        <span>Primary FIU Investigator</span>
+                    </mat-toolbar-row>
+                </mat-toolbar>
             </mat-card>
-        </ng-template> 
+        </ng-template>
 
     </div>
-</ng-template> 
+</ng-template>
 <!-- <ng-template [ngIf]="!additionalInfo">
     No data found
 </ng-template> -->

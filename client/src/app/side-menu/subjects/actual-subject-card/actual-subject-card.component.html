@@ -86,7 +86,7 @@
                         <mat-icon class="phone-icon" svgIcon="landline"></mat-icon>
                     </div>
 
-                    <div fxLayout="col" fxLayoutGap="10px">
+                    <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="2" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
                             {{subject.secondaryPhoneNo}}
@@ -94,7 +94,7 @@
                         <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
                     </div>
 
-                    <div fxLayout="col" fxLayoutGap="10px">
+                    <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="3" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
                             {{subject.thirdPhoneNo}}
@@ -102,7 +102,7 @@
                         <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
                     </div>
 
-                    <div fxLayout="col" fxLayoutGap="10px">
+                    <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="4" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
                             {{subject.fourthPhoneNo}}
@@ -110,7 +110,7 @@
                         <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
                     </div>
 
-                    <div fxLayout="col" fxLayoutGap="10px">
+                    <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="5" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
                             {{subject.fifthPhoneNo}}
@@ -118,7 +118,7 @@
                         <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
                     </div>
 
-                    <div fxLayout="col" fxLayoutGap="10px">
+                    <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="6" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
                             {{subject.sixthPhoneNo}}
@@ -126,7 +126,7 @@
                         <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
                     </div>
 
-                    <div fxLayout="col" fxLayoutGap="10px">
+                    <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="7" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
                             {{subject.seventhPhoneNo}}
@@ -170,86 +170,172 @@
                 <mat-divider class="document-divider"></mat-divider>
             </div>
             <div class="documents-div">
-                
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <span matBadge="1"  matBadgeOverlap="false"></span>
-                    <mat-card-title>Type:</mat-card-title>
+                <span matBadge="1" matBadgeOverlap="false"></span>
+                <div fxLayout="col" fxLayoutGap="20px">
+
+                    <mat-card-title class="gap">Type:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentType}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Number:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Number:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentNo}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Effective:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Effective:</mat-card-title>
                     <mat-card-subtitle>{{subject.effective}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Sector:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Sector:</mat-card-title>
                     <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Expires:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Expires:</mat-card-title>
                     <mat-card-subtitle>{{subject.expires}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Country:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Country:</mat-card-title>
                     <mat-card-subtitle>{{subject.country}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>State/Province:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">State/Province:</mat-card-title>
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Issuer:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
-                
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <span matBadge="2"  matBadgeOverlap="false"></span>
-                    <mat-card-title>Type:</mat-card-title>
+
+
+
+                <span matBadge="2" matBadgeOverlap="false"></span>
+                <div fxLayout="col" fxLayoutGap="20px">
+
+                    <mat-card-title class="gap">Type:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentType}}</mat-card-subtitle>
                 </div>
-                
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Number:</mat-card-title>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Number:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentNo}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Effective:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Effective:</mat-card-title>
                     <mat-card-subtitle>{{subject.effective}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Sector:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Sector:</mat-card-title>
                     <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Expires:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Expires:</mat-card-title>
                     <mat-card-subtitle>{{subject.expires}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Country:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Country:</mat-card-title>
                     <mat-card-subtitle>{{subject.country}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>State/Province:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">State/Province:</mat-card-title>
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-title>Issuer:</mat-card-title>
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Issuer:</mat-card-title>
+                    <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
+                </div>
+
+                <span matBadge="3" matBadgeOverlap="false"></span>
+                <div fxLayout="col" fxLayoutGap="20px">
+
+                    <mat-card-title class="gap">Type:</mat-card-title>
+                    <mat-card-subtitle>{{subject.documentType}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Number:</mat-card-title>
+                    <mat-card-subtitle>{{subject.documentNo}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Effective:</mat-card-title>
+                    <mat-card-subtitle>{{subject.effective}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Sector:</mat-card-title>
+                    <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Expires:</mat-card-title>
+                    <mat-card-subtitle>{{subject.expires}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Country:</mat-card-title>
+                    <mat-card-subtitle>{{subject.country}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">State/Province:</mat-card-title>
+                    <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Issuer:</mat-card-title>
+                    <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
+                </div>
+                <span matBadge="4" matBadgeOverlap="false"></span>
+                <div fxLayout="col" fxLayoutGap="20px">
+
+                    <mat-card-title class="gap">Type:</mat-card-title>
+                    <mat-card-subtitle>{{subject.documentType}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Number:</mat-card-title>
+                    <mat-card-subtitle>{{subject.documentNo}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Effective:</mat-card-title>
+                    <mat-card-subtitle>{{subject.effective}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Sector:</mat-card-title>
+                    <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Expires:</mat-card-title>
+                    <mat-card-subtitle>{{subject.expires}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Country:</mat-card-title>
+                    <mat-card-subtitle>{{subject.country}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">State/Province:</mat-card-title>
+                    <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
+                </div>
+
+                <div fxLayout="col" fxLayoutGap="20px">
+                    <mat-card-title class="gap">Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
 

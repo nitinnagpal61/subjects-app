@@ -5,190 +5,186 @@
 // }
 
 .card-details {
-    // padding: 0 1rem;
-    font-family: Arial;
-    font-size: 12px;
-    
+  // padding: 0 1rem;
+  font-family: Arial;
+  font-size: 12px;
 }
 
 .titlecontent {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 :host ::ng-deep {
-    mat-ink-bar {
+  mat-ink-bar {
     display: none;
-    }
+  }
 }
 
 .subject-label {
-    font-family: 'Arial Bold', 'Arial';
-    font-size: 14px;
-    font-weight: bold;
-    
+  font-family: "Arial Bold", "Arial";
+  font-size: 14px;
+  font-weight: bold;
 }
 
-
-
 .mat-card-title {
-    font-size: 12px;
-    font-family: 'Arial Bold', 'Arial';
-    margin-bottom: unset;
+  font-size: 12px;
+  font-family: "Arial Bold", "Arial";
+  margin-bottom: unset;
 }
 
 .mat-card-subtitle {
-    margin-top: unset;
-    font-family: 'Arial Bold', 'Arial';
-    font-size: 12px;
-    margin-bottom: unset;
+  margin-top: unset;
+  font-family: "Arial Bold", "Arial";
+  font-size: 12px;
+  margin-bottom: unset;
 }
 
-.title, .subtitle {
-    color: unset;
-    font-weight: bold;
+.title,
+.subtitle {
+  color: unset;
+  font-weight: bold;
 }
-
 
 .phone-divider {
-    left: 13px;
-    top: 30.1px;
-    width: 83%;
+  left: 13px;
+  top: 30.1px;
+  width: 83%;
+  color: black;
 }
 
 .email-divider {
-    left: 13px;
-    top: 8.9rem;
-    width: 83%;
-
+  left: 13px;
+  top: 8.9rem;
+  width: 83%;
+  color: black;
 }
 
 .email-title {
-    padding: 25px 0px 0px 0px;
-    
+  padding: 25px 0px 0px 0px;
 }
-
 
 .document-title {
-    padding: 25px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
 }
 .document-divider {
-    left: 13px;
-    top: 14.2rem;
-    width: 83%;
+  left: 13px;
+  top: 14.2rem;
+  width: 83%;
+  color: black;
 }
 
 .address-divider {
-    left: 10px;
-    top: 31.8px;
-    width: 85%;
+  left: 10px;
+  top: 31.8px;
+  width: 85%;
+  color: black;
 }
 
 .mat-badge {
-    width: 0;
-    top: 10px;
+  width: 0;
+  top: 11px;
 }
 
 .landmark {
-    padding-left: 2rem;
+  padding-left: 2rem;
 }
 
 .mat-raised-button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 mat-card {
-    margin-right: 0 !important;
-    padding: 14px !important;
-    min-width: 25% !important;
-    box-shadow: unset !important;
+  margin-right: 0 !important;
+  padding: 14px !important;
+  min-width: 25% !important;
+  box-shadow: unset !important;
 }
 
 .address-col {
-    padding-bottom: 0rem;
+  padding-bottom: 0rem;
 }
 
 .phone-section {
-    padding-bottom: 0rem;
-   padding-top: 0.1rem;
-//    max-height: 50px;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  //    max-height: 50px;
 }
 
 .phone-div {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    max-height: 65px;
-    
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 65px;
 }
 
 .addresses-div {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    max-height: 350px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 350px;
 }
 
 .documents-div {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    max-height: 145px;
-    // display: flex;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 145px;
+  // display: flex;
 }
 .phone-numbers-div {
-    padding-bottom: 0rem;
+  padding-bottom: 0rem;
 }
 
 .emails-div {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    max-height: 40px;
-    
-    
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 40px;
 }
 
+.gap {
+  padding-left: 2rem;
+}
 .phone-icon {
-    height: 20px;
-    width: 20px;
+  height: 16px;
+  width: 16px;
 }
 .phone-title {
-    margin-right: unset !important;
-    margin-left: 20px;
-    padding-top: 3px;
+  margin-right: unset !important;
+  margin-left: 20px;
+  padding-top: 0px;
 }
 
 :host ::ng-deep {
-    .mat-tab-label {
-        color: unset !important;
-        font-weight: bold !important;
-        font-family: 'Arial Bold', 'Arial' !important;
-    }
+  .mat-tab-label {
+    color: unset !important;
+    font-weight: bold !important;
+    font-family: "Arial Bold", "Arial" !important;
+  }
 
-    .mat-tab-label .mat-tab-label-content {
-        color: black;
-    }
+  .mat-tab-label .mat-tab-label-content {
+    color: black;
+  }
 }
-
 
 .phone-titlemain {
-    font-family: Arial Bold, Arial;
-    font-weight: bold;
-    font-size: 12px;
-    margin-left: 0px;
+  font-family: Arial Bold, Arial;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 0px;
 }
-
 
 .email-title {
-    font-family: Arial Bold, Arial;
-    font-weight: bold;
-    font-size: 12px;
-    
+  font-family: Arial Bold, Arial;
+  font-weight: bold;
+  font-size: 12px;
 }
-
 
 .email-gap {
-    padding-bottom: 3px;
+  padding-bottom: 3px;
 }
 .document-title {
-    font-family: Arial Bold, Arial;
-    font-weight: bold;
-    font-size: 12px;
+  font-family: Arial Bold, Arial;
+  font-weight: bold;
+  font-size: 12px;
 }
 
+.phone-gap {
+  padding-top: 3px;
+}

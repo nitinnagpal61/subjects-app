@@ -21,13 +21,16 @@
 
 .item-selected {
   background-color: #f6f7f7 !important;
-  // color: white;
-  // border-right-color: 2px solid blue !important;
+  
 }
 
 .item-not-selected {
   background-color: inherit !important;
   color: black;
+}
+
+.is-active {
+  border-right: 3px solid blue !important;
 }
 
 // .menu-bttn {

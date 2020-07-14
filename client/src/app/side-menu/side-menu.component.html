@@ -2,7 +2,7 @@
     <mat-drawer-container class="drawer-container" autosize>
         <mat-drawer #drawer class="example-sidenav" mode="side" opened>
             <mat-nav-list>
-                <a mat-list-item [routerLink]="nav.route" [ngClass]="selectedNav === nav ? 'item-selected' : 'item-not-selected'" (click)="onNavigate(nav)"
+                <a [routerLinkActive]="['is-active']" mat-list-item [routerLink]="nav.route" [ngClass]="selectedNav === nav ? 'item-selected' : 'item-not-selected'" (click)="onNavigate(nav)"
                     *ngFor="let nav of navLinks">{{nav.name}}</a>
             </mat-nav-list>
         </mat-drawer>

@@ -28,15 +28,15 @@
     
     <ul class="tabs clearfix">
         
-        <li *ngFor="let tab of tabs" (click)="onSelectTab(tab) "
+        <li *ngFor="let tab of tabs" (click)="onSelectTab(tab)"
             [ngClass]="tab?.label === selectedTab?.label || (tab?.isClosable &&  tab?.label === 'Subject') ? 'active-tab' : 'inactive-tab'">
             <span class="name-label">{{tab.label}}</span>
-            <button mat-icon-button *ngIf="tab.isClosable">
-                <mat-icon  class="subject-tab-icon" svgIcon="open_in_new" (click)="onMaximize(tab)">
+            <button mat-icon-button *ngIf="tab.isClosable" (click)="onMaximize(tab)">
+                <mat-icon  class="subject-tab-icon" svgIcon="open_in_new" >
                 </mat-icon>
             </button>
-            <button mat-icon-button *ngIf="tab.isClosable">
-                <mat-icon class="subject-tab-icon" class="close-icon"  (click)="onClose(tab)">close</mat-icon>
+            <button mat-icon-button *ngIf="tab.isClosable" (click)="onClose(tab)">
+                <mat-icon class="subject-tab-icon" class="close-icon"  >close</mat-icon>
             </button>
             <window *ngIf="tab?.isMaximized"  [id]="tab?.subject?.id" [title]="tab?.subject?.name">
             </window>
