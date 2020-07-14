@@ -11,6 +11,10 @@
     
 }
 
+.titlecontent {
+    font-weight: bold;
+}
+
 :host ::ng-deep {
     mat-ink-bar {
     display: none;
@@ -53,13 +57,14 @@
 
 .email-divider {
     left: 13px;
-    top: 9rem;
+    top: 8.5rem;
     width: 83%;
 
 }
 
 .email-title {
     padding: 25px 0px 0px 0px;
+    
 }
 
 
@@ -68,7 +73,7 @@
 }
 .document-divider {
     left: 13px;
-    top: 14.3rem;
+    top: 13.8rem;
     width: 83%;
 }
 
@@ -104,7 +109,7 @@ mat-card {
 
 .phone-section {
     padding-bottom: 0rem;
-   padding-top: 0.5rem;
+   padding-top: 0.1rem;
 //    max-height: 50px;
 }
 
@@ -125,6 +130,7 @@ mat-card {
     overflow-x: hidden;
     overflow-y: scroll;
     max-height: 145px;
+    // display: flex;
 }
 .phone-numbers-div {
     padding-bottom: 0rem;
@@ -134,6 +140,8 @@ mat-card {
     overflow-x: hidden;
     overflow-y: scroll;
     max-height: 40px;
+    
+    
 }
 
 .phone-icon {
@@ -143,6 +151,7 @@ mat-card {
 .phone-title {
     margin-right: unset !important;
     margin-left: 20px;
+    padding-top: 3px;
 }
 
 :host ::ng-deep {
@@ -170,8 +179,13 @@ mat-card {
     font-family: Arial Bold, Arial;
     font-weight: bold;
     font-size: 12px;
+    
 }
 
+
+.email-gap {
+    padding-bottom: 3px;
+}
 .document-title {
     font-family: Arial Bold, Arial;
     font-weight: bold;

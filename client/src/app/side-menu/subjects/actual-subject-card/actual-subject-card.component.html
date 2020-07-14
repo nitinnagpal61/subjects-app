@@ -2,65 +2,65 @@
     <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="space-around">
         <mat-card class="subject-details-card">
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>TIN Type:</mat-card-title>
+                <mat-card-title class="titlecontent">TIN Type:</mat-card-title>
                 <mat-card-subtitle>{{subject.type}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>Gender:</mat-card-title>
+                <mat-card-title class="titlecontent">Gender:</mat-card-title>
                 <mat-card-subtitle>{{subject.gender}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>CDD Rank Value:</mat-card-title>
+                <mat-card-title class="titlecontent">CDD Rank Value:</mat-card-title>
                 <mat-card-subtitle>{{subject.value}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>Preferred Contact Method:</mat-card-title>
+                <mat-card-title class="titlecontent">Preferred Contact Method:</mat-card-title>
                 <mat-card-subtitle>{{subject.contact}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>Subject Alert ID:</mat-card-title>
+                <mat-card-title class="titlecontent">Subject Alert ID:</mat-card-title>
                 <mat-card-subtitle>{{subject.alert}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>SSN/TIN:</mat-card-title>
+                <mat-card-title class="titlecontent">SSN/TIN:</mat-card-title>
                 <mat-card-subtitle>{{subject.ssn}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>Customer IP:</mat-card-title>
+                <mat-card-title class="titlecontent">Customer IP:</mat-card-title>
                 <mat-card-subtitle>{{subject.ip}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>Client Static ID / CIN:</mat-card-title>
+                <mat-card-title class="titlecontent">Client Static ID / CIN:</mat-card-title>
                 <mat-card-subtitle>{{subject.cin}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>Client Since Date:</mat-card-title>
+                <mat-card-title class="titlecontent">Client Since Date:</mat-card-title>
                 <mat-card-subtitle>{{subject.date}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>NAICS Sector:</mat-card-title>
+                <mat-card-title class="titlecontent">NAICS Sector:</mat-card-title>
                 <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>Age:</mat-card-title>
+                <mat-card-title class="titlecontent">Age:</mat-card-title>
                 <mat-card-subtitle>{{subject.age}}</mat-card-subtitle>
             </div>
 
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>Date of Birth/Incorporated....:</mat-card-title>
+                <mat-card-title class="titlecontent">Date of Birth/Incorporated.... :</mat-card-title>
                 <mat-card-subtitle>{{subject.birth}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>Household ID:</mat-card-title>
+                <mat-card-title class="titlecontent">Household ID:</mat-card-title>
                 <mat-card-subtitle>{{subject.household}}</mat-card-subtitle>
             </div>
 
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>Alternate Name:</mat-card-title>
+                <mat-card-title class="titlecontent">Alternate Name:</mat-card-title>
                 <mat-card-subtitle>{{subject.name}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title>NAICS Sub Sector:</mat-card-title>
+                <mat-card-title class="titlecontent">NAICS Sub Sector:</mat-card-title>
                 <mat-card-subtitle>{{subject.sub}}</mat-card-subtitle>
             </div>
 
@@ -145,23 +145,23 @@
             <div class="emails-div">
                 <div fxLayout="col" fxLayoutGap="30px">
                     <span matBadge="1" matBadgeOverlap="false"></span>
-                    <mat-card-subtitle>{{subject.emailId}}</mat-card-subtitle>
+                    <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
                 </div>
                 <div fxLayout="col" fxLayoutGap="30px">
                     <span matBadge="2" matBadgeOverlap="false"></span>
-                    <mat-card-subtitle>{{subject.emailId}}</mat-card-subtitle>
+                    <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
                 </div>
                 <div fxLayout="col" fxLayoutGap="30px">
                     <span matBadge="3" matBadgeOverlap="false"></span>
-                    <mat-card-subtitle>{{subject.emailId}}</mat-card-subtitle>
+                    <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
                 </div>
                 <div fxLayout="col" fxLayoutGap="30px">
                     <span matBadge="4" matBadgeOverlap="false"></span>
-                    <mat-card-subtitle>{{subject.emailId}}</mat-card-subtitle>
+                    <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
                 </div>
                 <div fxLayout="col" fxLayoutGap="30px">
                     <span matBadge="5" matBadgeOverlap="false"></span>
-                    <mat-card-subtitle>{{subject.emailId}}</mat-card-subtitle>
+                    <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
                 </div>
             </div>
 
@@ -170,85 +170,85 @@
                 <mat-divider class="document-divider"></mat-divider>
             </div>
             <div class="documents-div">
-
-                <div fxLayout="col" fxLayoutGap="50px">
-                    <span matBadge="1" matBadgeOverlap="false"></span>
+                
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <span matBadge="1"  matBadgeOverlap="false"></span>
                     <mat-card-title>Type:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentType}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Number:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentNo}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Effective:</mat-card-title>
                     <mat-card-subtitle>{{subject.effective}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Sector:</mat-card-title>
                     <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Expires:</mat-card-title>
                     <mat-card-subtitle>{{subject.expires}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Country:</mat-card-title>
                     <mat-card-subtitle>{{subject.country}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>State/Province:</mat-card-title>
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="50px">
-                    <span matBadge="2" matBadgeOverlap="false"></span>
+                
+                <div fxLayout="col" fxLayoutGap="auto">
+                    <span matBadge="2"  matBadgeOverlap="false"></span>
                     <mat-card-title>Type:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentType}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="50px">
+                
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Number:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentNo}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Effective:</mat-card-title>
                     <mat-card-subtitle>{{subject.effective}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Sector:</mat-card-title>
                     <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Expires:</mat-card-title>
                     <mat-card-subtitle>{{subject.expires}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Country:</mat-card-title>
                     <mat-card-subtitle>{{subject.country}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>State/Province:</mat-card-title>
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="50px">
+                <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
