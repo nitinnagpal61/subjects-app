@@ -25,8 +25,10 @@
 </div>
 
 <div class=tab-container>
+    
     <ul class="tabs clearfix">
-        <li *ngFor="let tab of tabs" (click)="onSelectTab(tab)"
+        
+        <li *ngFor="let tab of tabs" (click)="onSelectTab(tab) "
             [ngClass]="tab?.label === selectedTab?.label || (tab?.isClosable &&  tab?.label === 'Subject') ? 'active-tab' : 'inactive-tab'">
             <span class="name-label">{{tab.label}}</span>
             <button mat-icon-button *ngIf="tab.isClosable">
@@ -40,7 +42,9 @@
             </window>
         
         </li>
+        
     </ul>
+    
 </div>
 
 <div *ngIf="selectedTab === undefined || !selectedTab.isClosable" class=outer-circle>

@@ -50,6 +50,7 @@
     font-size: 12px;
     margin-bottom: unset;
     font-family: Arial;
+    font-weight: bold;
 }
 
 .mat-card-subtitle {
@@ -59,7 +60,7 @@
     font-family: Arial;
     font-size: 12px;
     color: unset;
-    font-weight: bold;
+    font-weight: light;
 }
 
 
@@ -68,6 +69,7 @@
     cursor: pointer;
     padding: 5px;
     width: 15%;
+    
 }
 
 .card-list {
@@ -159,13 +161,11 @@
     width: 18px;
     line-height: 18px;
     font-size: 16px;
+    
+    
 }
 
-//chrome alike tabs
 
-// .icons {
-//   width: 20px;
-// }
 body{
     background : #efefef;
     font : .8em sans-serif;
@@ -176,6 +176,7 @@ body{
     padding: 0;
     max-height: 35px;
     margin-left: -23px;
+    
   }
   
   ul.tabs{
@@ -193,6 +194,8 @@ body{
   ul.tabs > li.active{
     z-index: 2;
     background: #fff;
+    
+    
     
   }
   
@@ -284,8 +287,15 @@ body{
     line-height: 15px;
     margin-right: 10px;
     font-size: 12px;
+    
+
+
   }
 
   .name-label {
     padding-right: 1rem;
+    
   }
+
+  
+ 
