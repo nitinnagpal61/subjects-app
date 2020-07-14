@@ -142,34 +142,56 @@
         </div>
 
         <ng-template [ngIf]="!showInvestigationLink">
-            <mat-card>
-                <mat-toolbar>
-                    <span>UFO Reference Number</span>
+            <mat-card class="card-whole">
+                <mat-toolbar class="border">
+                    <span class="ufo">UFO Reference Number:</span>
                     <a class="ref-no">7698101</a>
                 </mat-toolbar>
 
                 <mat-toolbar>
-                    <span>LOB Primary Contact:</span>
-                    <mat-toolbar-row>
-                        <button mat-raised-button>Add</button>
-                        <button mat-raised-button>Edit</button>
-                    </mat-toolbar-row>
-                </mat-toolbar>
+                    <span class="lobclass">LOB Primary Contact:</span>
+                    <mat-toolbar-row class="borderwhole">
+                        <button mat-raised-button class="crud-bttn">
+                            <mat-icon svgIcon="note-add"></mat-icon>
+                            Add
+                        </button>
+                        <button mat-raised-button class="crud-bttn">
+                            <mat-icon svgIcon="edit"></mat-icon>
+                            Edit
+                        </button>
 
+                    </mat-toolbar-row>
+
+                </mat-toolbar>
+                <p class="line">No records to show</p>
                 <mat-toolbar>
-                    <span>Primary FIU Investigator</span>
-                    <mat-toolbar-row>
-                        <span>Primary FIU Investigator</span>
-                    </mat-toolbar-row>
-                    <mat-toolbar-row>
-                        <span>Primary FIU Investigator</span>
-                    </mat-toolbar-row>
+
+                    <mat-toolbar class="greybackgroundcolor">
+                        <span class="pfi">Primary FIU Investigator:</span>
+                        <mat-divider class="pfi-divider"></mat-divider>
+                        <mat-toolbar-row>
+                            <p class="name">Investigator Name: .....</p>
+                        </mat-toolbar-row>
+                        <mat-toolbar-row>
+                            <p class="id">Investigator User ID: ....</p>
+                        </mat-toolbar-row>
+                    </mat-toolbar>
+                    <mat-toolbar class="greybackgroundcolor1">
+
+                        <span class="pci">Primary CI Investigator:</span>
+                        <mat-divider class="pci-divider"></mat-divider>
+                        <mat-toolbar-row>
+                            <p class="namepci">Investigator Name: ......</p>
+                        </mat-toolbar-row>
+                        <mat-toolbar-row>
+                            <p class="idpci">Investigator User ID: .....</p>
+                        </mat-toolbar-row>
+                    </mat-toolbar>
+
+
                 </mat-toolbar>
             </mat-card>
         </ng-template>
 
     </div>
 </ng-template>
-<!-- <ng-template [ngIf]="!additionalInfo">
-    No data found
-</ng-template> -->

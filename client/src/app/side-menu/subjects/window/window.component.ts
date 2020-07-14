@@ -1,3 +1,4 @@
+// tslint:disable-next-line: max-line-length
 import {Component, AfterViewInit, TemplateRef, ViewChild, ViewContainerRef, ComponentFactoryResolver, ApplicationRef, Injector, Input, OnChanges, SimpleChanges} from '@angular/core';
 import {ComponentPortal, Portal, TemplatePortal, DomPortalHost} from '@angular/cdk/portal';
 import { ActivatedRoute, Router } from '@angular/router';

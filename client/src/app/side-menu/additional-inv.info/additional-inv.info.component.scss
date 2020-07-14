@@ -15,7 +15,7 @@
 
 mat-card {
   margin-right: 0 !important;
-  padding: 13px !important;
+  padding: 12px !important;
   min-width: 30% !important;
   box-shadow: unset !important;
 }
@@ -38,15 +38,158 @@ mat-card {
 
 .selected {
   color: blue;
+  // font-weight: bold;
+  font-family: Arial;
 }
 
 .unselected {
-  color: grey;
+  color: black;
+  // font-weight: bold;
+  font-family: Arial;
+ 
 }
 
 .ref-no {
-  font-size: 15px;
+  font-size: 13px;
   padding: 1rem 0.5rem;
   text-decoration: underline;
-  color: blue;
+  color: #0178a0;
+}
+
+.ufo {
+  font-family: Arial;
+  color: black;
+  font-size: 13px;
+  
+}
+
+.border {
+  border: 1px solid grey;
+  padding: 13px 0px 14px 2px;
+  border-width: thin;
+  background-color: white;
+}
+
+.mat-icon {
+  fill: #0074bb;
+}
+
+.crud-bttn {
+  padding: 0px 4px 0px 0px;
+    height: 27px;
+    width: 27px;
+    line-height: 27px;
+  
+}
+
+.lobclass {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial;
+  padding: -1px 0px 0px 0px;
+  background-color: white;
+}
+
+// .borderclass {
+//   border: 1px solid grey;
+//   border-width: thin;
+// }
+
+.background {
+  background-color: white;
+}
+
+.line {
+  padding-left: 0.5rem;
+  border: 1px solid grey;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pfi {
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 13px;
+ 
+}
+
+.borderwhole {
+  border: 1px solid grey;
+  padding: 0px 0px 3px 0px;
+}
+
+.card-whole {
+  margin-left: 0.8rem;
+}
+
+.name {
+  font-size: 12px;
+  font-family: Arial;
+  padding: -1px 0px 0px 0px;
+  margin-left: -0.3rem;
+  margin-top: -20px;
+
+}
+
+.id {
+  font-size: 12px;
+  font-family: Arial;
+  padding: -1px 0px 0px 0px;
+  margin-left: -0.3rem;
+  margin-top: -60px;
+
+}
+
+.namepci {
+  
+    font-size: 12px;
+    font-family: Arial;
+    padding: -1px 0px 0px 0px;
+  margin-left: -0.3rem;
+  margin-top: -20px;
+  
+ 
+}
+
+.idpci {
+  font-size: 12px;
+  font-family: Arial;
+  padding: -1px 0px 0px 0px;
+  margin-left: -0.3rem;
+  margin-top: -60px;
+
+}
+
+.pci {
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 13px;
+  margin-top: -40px;
+ 
+}
+
+.info-header {
+  margin-left: 0.5rem;
+ 
+}
+
+.greybackgroundcolor {
+  background-color: white;
+}
+
+.greybackgroundcolor1 {
+  background-color: white;
+}
+
+.pfi-divider {
+      width: 16%;
+      top: 183px;
+      left: 11px;
+}
+
+.pci-divider {
+  width: 15%;
+  top: 255px;
+  left: 11px;
 }

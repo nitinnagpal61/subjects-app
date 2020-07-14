@@ -2,6 +2,7 @@
   height: calc(100vh - 12rem);
   position: inherit;
   overflow: hidden;
+  
 }
 
 .drawer-container {
@@ -9,6 +10,7 @@
   color: #f6f7f7;
   overflow-y: auto;
   background-color: unset;
+  
 }
 
 .navLink-visible {
@@ -21,17 +23,22 @@
 
 .item-selected {
   background-color: #f6f7f7 !important;
-  
+ 
 }
+
+ 
+
+
 
 .item-not-selected {
   background-color: inherit !important;
   color: black;
+ 
 }
 
-.is-active {
-  border-right: 3px solid blue !important;
-}
+// .is-active {
+//   border-right: 3px solid blue !important;
+// }
 
 // .menu-bttn {
 //     text-align: left;
@@ -46,6 +53,7 @@
   padding-bottom: 0px;
   padding-top: 0px;
   padding-left: 0px;
+  
 }
 
 // .mat-toolbar-single-row {
@@ -79,5 +87,9 @@
 
 .example-sidenav {
   background-color: #f6f7f7;
+  
 }
 
+.selected {
+  border-right: 3px solid blue !important;
+}

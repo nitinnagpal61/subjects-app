@@ -161,8 +161,8 @@
     width: 18px;
     line-height: 18px;
     font-size: 16px;
-    margin-right: -25px;
-    padding: 0px 0px 10px 0px;
+    margin-right: 10px;
+    padding: 0px 0px 12px 0px;
     font-weight: bold;
     
 }
@@ -248,13 +248,13 @@ body{
   
   ul.tabs > li:before{
     border-color : transparent #ddd transparent transparent;
-    -webkit-transform : rotate(48deg);
+    // -webkit-transform : rotate(48deg);
     left: -23px;
   }
   
   ul.tabs > li:after{
     border-color : transparent transparent transparent #ddd;
-    -webkit-transform : rotate(-48deg);
+    // -webkit-transform : rotate(-48deg);
     right: -17px;
   }
   
@@ -276,6 +276,7 @@ body{
       background-color: white;
       border-top-right-radius: 100px 170px;
       border-top-left-radius: 100px 90px;
+      padding: 0px 0px 10px 0px;
   }
 
   .inactive-tab {
@@ -287,13 +288,14 @@ body{
     height: 15px;
     width: 15px;
     line-height: 15px;
-    margin-right: 20px;
+    margin-right: -30px;
+    padding: 0px 0px 11px 2px;
 
 
   }
 
   .name-label {
-    // padding: 0px 0px 0px 10px;
+    margin-top: -10px;
     font-weight: bold;
   }
 
