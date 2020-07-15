@@ -15,9 +15,11 @@
 
 mat-card {
   margin-right: 0 !important;
-  padding: 12px !important;
-  min-width: 30% !important;
+  padding-right: 100px !important;
+  width: 30% !important;
   box-shadow: unset !important;
+  // text-align: left;
+  // padding-right: 30px;
 }
 
 .mat-toolbar-row,
@@ -28,7 +30,12 @@ mat-card {
 
 .additional-details-row {
   padding: 0.5rem 0.8rem;
+  
 }
+
+// .additional-info-card {
+//   text-align: left;
+// padding-right: 30px;}
 
 .investigation-links {
   padding: 1rem 1rem 0 1.5rem;
@@ -171,6 +178,8 @@ mat-card {
 
 .info-header {
   margin-left: 0.5rem;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
  
 }
 
@@ -183,13 +192,13 @@ mat-card {
 }
 
 .pfi-divider {
-      width: 16%;
-      top: 183px;
-      left: 11px;
+      width: 37.5%;
+      top: 186px;
+      left: 15px;
 }
 
 .pci-divider {
-  width: 15%;
-  top: 255px;
-  left: 11px;
+  width: 35.5%;
+  top: 258px;
+  left: 15px;
 }

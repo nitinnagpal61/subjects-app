@@ -47,16 +47,16 @@
 
 .phone-divider {
   left: 13px;
-  top: 30.1px;
-  width: 83%;
-  color: black;
+  top: 31px;
+  width: 84%;
+  
 }
 
 .email-divider {
   left: 13px;
-  top: 8.9rem;
-  width: 83%;
-  color: black;
+  top: 140px;
+  width: 84%;
+  
 }
 
 .email-title {
@@ -68,15 +68,15 @@
 }
 .document-divider {
   left: 13px;
-  top: 14.2rem;
-  width: 83%;
-  color: black;
+  top: 225px;
+  width: 84%;
+  
 }
 
 .address-divider {
-  left: 10px;
+  left: 13px;
   top: 31.8px;
-  width: 85%;
+  width: 84%;
   color: black;
 }
 
@@ -120,8 +120,16 @@ mat-card {
   overflow-x: hidden;
   overflow-y: scroll;
   max-height: 350px;
+  
   }
 
+ .gaps {
+   padding-bottom: 10px;
+ }
+
+ .email-gaps {
+   padding-bottom: 5px;
+ }
 .documents-div {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -178,6 +186,7 @@ mat-card {
 
 .email-gap {
   padding-bottom: 3px;
+  // padding-top: 5px;
 }
 .document-title {
   font-family: Arial Bold, Arial;
@@ -186,5 +195,6 @@ mat-card {
 }
 
 .phone-gap {
-  padding-top: 3px;
+  padding-top: 1px;
+  padding-bottom: 6px;
 }

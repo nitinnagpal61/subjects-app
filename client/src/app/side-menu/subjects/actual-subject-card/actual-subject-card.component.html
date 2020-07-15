@@ -78,7 +78,7 @@
 
             <div class="phone-section">
                 <div class="phone-div">
-                    <div fxLayout="col" fxLayoutGap="10px">
+                    <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="1" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
                             {{subject.primaryPhoneNo}}
@@ -143,23 +143,23 @@
                 <mat-divider class="email-divider"></mat-divider>
             </div>
             <div class="emails-div">
-                <div fxLayout="col" fxLayoutGap="30px">
+                <div fxLayout="col" fxLayoutGap="30px" class="email-gaps">
                     <span matBadge="1" matBadgeOverlap="false"></span>
                     <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="30px">
+                <div fxLayout="col" fxLayoutGap="30px" class="email-gaps">
                     <span matBadge="2" matBadgeOverlap="false"></span>
                     <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="30px">
+                <div fxLayout="col" fxLayoutGap="30px" class="email-gaps">
                     <span matBadge="3" matBadgeOverlap="false"></span>
                     <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="30px">
+                <div fxLayout="col" fxLayoutGap="30px" class="email-gaps">
                     <span matBadge="4" matBadgeOverlap="false"></span>
                     <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="30px">
+                <div fxLayout="col" fxLayoutGap="30px" class="email-gaps">
                     <span matBadge="5" matBadgeOverlap="false"></span>
                     <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
                 </div>
@@ -207,7 +207,7 @@
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="20px" class="gaps">
                     <mat-card-title class="gap">Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
@@ -251,7 +251,7 @@
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="20px" class="gaps">
                     <mat-card-title class="gap">Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
@@ -293,10 +293,11 @@
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="20px" class="gaps">
                     <mat-card-title class="gap">Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
+                
                 <span matBadge="4" matBadgeOverlap="false"></span>
                 <div fxLayout="col" fxLayoutGap="20px">
 
@@ -334,7 +335,7 @@
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
 
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="20px" class="gaps">
                     <mat-card-title class="gap">Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
@@ -366,7 +367,7 @@
                         <span class="landmark">{{subject.addresses[0].line2}}</span>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
                     <mat-card-subtitle>
                         <span class="landmark">{{subject.addresses[0].line3}}</span>
                     </mat-card-subtitle>
@@ -392,7 +393,7 @@
                         <span class="landmark">{{subject.addresses[1].line3}}</span>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
                     <mat-card-subtitle>
                         <span class="landmark">{{subject.addresses[1].line4}}</span>
                     </mat-card-subtitle>
@@ -415,7 +416,7 @@
                         <span class="landmark">{{subject.addresses[0].line2}}</span>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
                     <mat-card-subtitle>
                         <span class="landmark">{{subject.addresses[0].line3}}</span>
                     </mat-card-subtitle>
@@ -441,7 +442,7 @@
                         <span class="landmark">{{subject.addresses[1].line3}}</span>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
                     <mat-card-subtitle>
                         <span class="landmark">{{subject.addresses[1].line4}}</span>
                     </mat-card-subtitle>
@@ -464,7 +465,7 @@
                         <span class="landmark">{{subject.addresses[0].line2}}</span>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
                     <mat-card-subtitle>
                         <span class="landmark">{{subject.addresses[0].line3}}</span>
                     </mat-card-subtitle>
@@ -490,7 +491,7 @@
                         <span class="landmark">{{subject.addresses[1].line3}}</span>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
                     <mat-card-subtitle>
                         <span class="landmark">{{subject.addresses[1].line4}}</span>
                     </mat-card-subtitle>
@@ -513,7 +514,7 @@
                         <span class="landmark">{{subject.addresses[0].line2}}</span>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
                     <mat-card-subtitle>
                         <span class="landmark">{{subject.addresses[0].line3}}</span>
                     </mat-card-subtitle>
@@ -539,7 +540,7 @@
                         <span class="landmark">{{subject.addresses[1].line3}}</span>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
                     <mat-card-subtitle>
                         <span class="landmark">{{subject.addresses[1].line4}}</span>
                     </mat-card-subtitle>
@@ -562,7 +563,7 @@
                         <span class="landmark">{{subject.addresses[0].line2}}</span>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
                     <mat-card-subtitle>
                         <span class="landmark">{{subject.addresses[0].line3}}</span>
                     </mat-card-subtitle>
@@ -588,7 +589,7 @@
                         <span class="landmark">{{subject.addresses[1].line3}}</span>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
                     <mat-card-subtitle>
                         <span class="landmark">{{subject.addresses[1].line4}}</span>
                     </mat-card-subtitle>
