@@ -13,7 +13,6 @@ import { CorporateInvestigationsComponent } from './side-menu/corporate-investig
 import { SuspiciousActivityComponent } from './side-menu/suspicious-activity/suspicious-activity.component';
 import { AppComponent } from './app.component';
 import { InvestigationHeaderComponent } from './investigation-header/investigation-header.component';
-// import { TopBarComponent } from './top-bar/top-bar.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 
 const routes: Routes = [
@@ -33,9 +32,11 @@ const routes: Routes = [
   { path: 'hrcq', component: HRCQComponent },
   { path: 'financialrecords', component: FinancialRecordsComponent },
   { path: 'contactedagencies', component: ContactedAgenciesComponent },
-  { path: 'corporateinvestigations', component: CorporateInvestigationsComponent },
-  // { path: 'topbar', component: TopBarComponent},
-  {path: 'sidemenu', component: SideMenuComponent}
+  {
+    path: 'corporateinvestigations',
+    component: CorporateInvestigationsComponent
+  },
+  { path: 'sidemenu', component: SideMenuComponent }
 ];
 
 @NgModule({

@@ -1,13 +1,41 @@
 [
-    { "name": "Additional Inv. Info.", "isVisible": false, "route": "additionalinvinfo"},
-    { "name": "Subjects", "isVisible": true, "route": "subjects"},
-    { "name": "Accounts", "isVisible": false, "route": "accounts"},
-    { "name": "Financial Records", "isVisible": false, "route": "financialrecords"},
-    { "name": "Contacted Agencies", "isVisible": false, "route": "contactedagencies"},
-    { "name": "HRCQ", "isVisible": false, "route": "hrcq"},
-    { "name": "Associated Inv. Items", "isVisible": false, "route": "associatedinvitems"},
-    { "name": "Form Filler", "isVisible": false, "route": "formfiller"},
-    { "name": "Additional Information", "isVisible": false, "route": "additionalinformation"},
-    { "name": "Corporate Investigations", "isVisible": false, "route": "corporateinvestigations"},
-    { "name": "Suspicious Activity", "isVisible": false, "route": "suspiciousactivity"}
-  ]
+  {
+    "name": "Additional Inv. Info.",
+    "isVisible": false,
+    "route": "additionalinvinfo"
+  },
+  { "name": "Subjects", "isVisible": true, "route": "subjects" },
+  { "name": "Accounts", "isVisible": false, "route": "accounts" },
+  {
+    "name": "Financial Records",
+    "isVisible": false,
+    "route": "financialrecords"
+  },
+  {
+    "name": "Contacted Agencies",
+    "isVisible": false,
+    "route": "contactedagencies"
+  },
+  { "name": "HRCQ", "isVisible": false, "route": "hrcq" },
+  {
+    "name": "Associated Inv. Items",
+    "isVisible": false,
+    "route": "associatedinvitems"
+  },
+  { "name": "Form Filler", "isVisible": false, "route": "formfiller" },
+  {
+    "name": "Additional Information",
+    "isVisible": false,
+    "route": "additionalinformation"
+  },
+  {
+    "name": "Corporate Investigations",
+    "isVisible": false,
+    "route": "corporateinvestigations"
+  },
+  {
+    "name": "Suspicious Activity",
+    "isVisible": false,
+    "route": "suspiciousactivity"
+  }
+]

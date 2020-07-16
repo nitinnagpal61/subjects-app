@@ -3,18 +3,19 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ActualSubjectCardComponent } from './actual-subject-card/actual-subject-card.component';
 
-
 @NgModule({
   imports: [
     CommonModule,
-    [RouterModule.forChild([
+    [
+      RouterModule.forChild([
         {
-            path: 'actual-subject-card/:id',
-            component: ActualSubjectCardComponent
+          path: 'actual-subject-card/:id',
+          component: ActualSubjectCardComponent
         }
-    ])]
+      ])
+    ]
   ],
-  exports: [RouterModule],
+  exports: [RouterModule]
   // declarations: [WindowComponent]
 })
-export class SubjectsModule { }
+export class SubjectsModule {}

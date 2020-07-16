@@ -8,9 +8,8 @@ describe('HRCQComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HRCQComponent ]
-    })
-    .compileComponents();
+      declarations: [HRCQComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -5,8 +5,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SideMenuService {
-  private url = 'http://localhost:3000'
-  constructor(private http: HttpClient) { }
+  private url = 'http://localhost:3000';
+  constructor(private http: HttpClient) {}
 
   getLinks = () => this.http.get(`${this.url}/navLinks`);
 }

@@ -3,10 +3,12 @@
         <mat-toolbar>
             <mat-toolbar-row class="info-header">
                 <span>Additional Inv. Info.</span>
-
             </mat-toolbar-row>
         </mat-toolbar>
-        <mat-divider></mat-divider>
+        <mat-toolbar class="backgroundcolorufo">
+            <span class="ufo">UFO Reference Number:</span>
+            <a class="ref-no">7698101</a>
+        </mat-toolbar>
         <div fxLayout="row" class="investigation-links" fxLayoutGap="2rem">
             <a [ngClass]="showInvestigationLink ? 'unselected' : 'selected'"
                 (click)="showInvestigationLink = true">Investigation Information</a>
@@ -19,54 +21,40 @@
                     <mat-card-title>Assigned On:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.assignedOn}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Created By:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.createdBy}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Updated On:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.updatedOn}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Updated By:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.updatedBy}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>SAS Status:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.stampStatus}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Risk Score:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.riskScore}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Inv. Score:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.invScore}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Priority Score:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.priorityScore}}</mat-card-subtitle>
                 </div>
-
-
             </mat-card>
-
             <mat-card class="additional-info-card">
-
-
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Inv. Priority:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.invPriority}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Summary:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.summary}}</mat-card-subtitle>
@@ -75,56 +63,40 @@
                     <mat-card-title>Business Unit:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.businesUnit}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Created By User ID:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.createdByUserID}}</mat-card-subtitle>
                 </div>
-
-
-
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Date UFO Submitted:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.dateUFOSubmitted}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Investigation Type:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.investigationType}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Alerted Account NO:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.alertedAccountNO}}</mat-card-subtitle>
                 </div>
-
             </mat-card>
-
             <mat-card class="additional-info-card">
-
-
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Inv. Category:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.invCategory}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Inv. Initiated by WCASTN:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.invInitiatedByWCASTN}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Scenario Description:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.scenarioDescription}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>SAS Source:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.stampSource}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Sub-Type:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.subType}}</mat-card-subtitle>
@@ -133,23 +105,16 @@
                     <mat-card-title>Recent SAR Filing Type</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.recentSARFilingType}}</mat-card-subtitle>
                 </div>
-
                 <div fxLayout="col" fxLayoutGap="auto">
                     <mat-card-title>Date Detected:</mat-card-title>
                     <mat-card-subtitle>{{additionalInfo.dateDetected}}</mat-card-subtitle>
                 </div>
             </mat-card>
         </div>
-
         <ng-template [ngIf]="!showInvestigationLink">
             <mat-card class="card-whole">
-                <mat-toolbar class="border">
-                    <span class="ufo">UFO Reference Number:</span>
-                    <a class="ref-no">7698101</a>
-                </mat-toolbar>
-
                 <mat-toolbar>
-                    <span class="lobclass">LOB Primary Contact:</span>
+                    <!-- <span class="lobclass">LOB Primary Contact:</span> -->
                     <mat-toolbar-row class="borderwhole">
                         <button mat-raised-button class="crud-bttn">
                             <mat-icon svgIcon="note-add"></mat-icon>
@@ -159,39 +124,32 @@
                             <mat-icon svgIcon="edit"></mat-icon>
                             Edit
                         </button>
-
                     </mat-toolbar-row>
-
                 </mat-toolbar>
                 <p class="line">No records to show</p>
                 <mat-toolbar>
-
                     <mat-toolbar class="greybackgroundcolor">
                         <span class="pfi">Primary FIU Investigator:</span>
                         <mat-divider class="pfi-divider"></mat-divider>
                         <mat-toolbar-row>
-                            <p class="name">Investigator Name: .....</p>
+                            <span class="name">Investigator Name: .....</span>
                         </mat-toolbar-row>
                         <mat-toolbar-row>
-                            <p class="id">Investigator User ID: ....</p>
+                            <span class="id">Investigator User ID: ....</span>
                         </mat-toolbar-row>
                     </mat-toolbar>
                     <mat-toolbar class="greybackgroundcolor1">
-
                         <span class="pci">Primary CI Investigator:</span>
                         <mat-divider class="pci-divider"></mat-divider>
                         <mat-toolbar-row>
-                            <p class="namepci">Investigator Name: ......</p>
+                            <span class="namepci">Investigator Name: ......</span>
                         </mat-toolbar-row>
                         <mat-toolbar-row>
-                            <p class="idpci">Investigator User ID: .....</p>
+                            <span class="idpci">Investigator User ID: .....</span>
                         </mat-toolbar-row>
                     </mat-toolbar>
-
-
                 </mat-toolbar>
             </mat-card>
         </ng-template>
-
     </div>
 </ng-template>

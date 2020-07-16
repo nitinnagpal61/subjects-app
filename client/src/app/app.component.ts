@@ -13,24 +13,12 @@ export class AppComponent {
   title = 'POC for Subjects App';
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
-    // iconRegistry.addSvgIcon(
-    //   'person-add',
-    //   sanitizer.bypassSecurityTrustResourceUrl(
-    //     'assets/icons/person_add-24px.svg'
-    //   )
-    // );
     iconRegistry.addSvgIcon(
       'arrow-drop-down',
       sanitizer.bypassSecurityTrustResourceUrl(
         'assets/icons/arrow_drop_down-24px.svg'
       )
     );
-    // iconRegistry.addSvgIcon(
-    //   'expand-more',
-    //   sanitizer.bypassSecurityTrustResourceUrl(
-    //     'assets/icons/expand_more-24px.svg'
-    //   )
-    // );
 
     iconRegistry.addSvgIcon(
       'note-add',
@@ -39,7 +27,9 @@ export class AppComponent {
 
     iconRegistry.addSvgIcon(
       'open_in_new',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/open_in_new-24px.svg')
+      sanitizer.bypassSecurityTrustResourceUrl(
+        'assets/icons/open_in_new-24px.svg'
+      )
     );
 
     iconRegistry.addSvgIcon(
@@ -49,7 +39,9 @@ export class AppComponent {
 
     iconRegistry.addSvgIcon(
       'delete',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/delete_outline-24px.svg')
+      sanitizer.bypassSecurityTrustResourceUrl(
+        'assets/icons/delete_outline-24px.svg'
+      )
     );
 
     iconRegistry.addSvgIcon(
@@ -59,7 +51,9 @@ export class AppComponent {
 
     iconRegistry.addSvgIcon(
       'close_fullscreen',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/close_fullscreen-24px.svg')
+      sanitizer.bypassSecurityTrustResourceUrl(
+        'assets/icons/close_fullscreen-24px.svg'
+      )
     );
 
     iconRegistry.addSvgIcon(
@@ -74,12 +68,16 @@ export class AppComponent {
 
     iconRegistry.addSvgIcon(
       'landline',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/local_phone-24px.svg')
+      sanitizer.bypassSecurityTrustResourceUrl(
+        'assets/icons/local_phone-24px.svg'
+      )
     );
 
     iconRegistry.addSvgIcon(
       'mobile',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/phone_iphone-24px.svg')
+      sanitizer.bypassSecurityTrustResourceUrl(
+        'assets/icons/phone_iphone-24px.svg'
+      )
     );
   }
 }

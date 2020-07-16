@@ -17,42 +17,31 @@
             <mat-icon svgIcon="search"></mat-icon>
             Search - ActOne
         </button>
-
     </div>
     <div class="paginator-bttn" fxLayout="col" fxLayoutGap="8px">
         <mat-paginator class="paginator" [pageSizeOptions]="[10, 10]"></mat-paginator>
     </div>
 </div>
-
 <div class=tab-container>
-    
     <ul class="tabs clearfix">
-        
         <li *ngFor="let tab of tabs" (click)="onSelectTab(tab)"
             [ngClass]="tab?.label === selectedTab?.label || (tab?.isClosable &&  tab?.label === 'Subject') ? 'active-tab' : 'inactive-tab'">
-            <span class="name-label">{{tab.label}}</span>
-            <button mat-icon-button *ngIf="tab.isClosable" (click)="onMaximize(tab)">
-                <mat-icon  class="subject-tab-icon" svgIcon="open_in_new" >
+            <div fxLayout="row">
+                <span class="name-label">{{tab.label}}</span>
+                <mat-icon style="padding-left: 2rem;" *ngIf="tab.isClosable" (click)="onMaximize(tab)"
+                    class="subject-tab-icon" svgIcon="open_in_new">
                 </mat-icon>
-            </button>
-            <button mat-icon-button *ngIf="tab.isClosable" (click)="onClose(tab)">
-                <mat-icon class="subject-tab-icon" class="close-icon"  >close</mat-icon>
-            </button>
-            <window *ngIf="tab?.isMaximized"  [id]="tab?.subject?.id" [title]="tab?.subject?.name">
+                <mat-icon *ngIf="tab.isClosable" (click)="onClose(tab)" class="subject-tab-icon" class="close-icon">
+                    close</mat-icon>
+            </div>
+            <window *ngIf="tab?.isMaximized" [id]="tab?.subject?.id" [title]="tab?.subject?.name">
             </window>
-        
         </li>
-        
     </ul>
-    
 </div>
-
 <div *ngIf="selectedTab === undefined || !selectedTab.isClosable" class=outer-circle>
     <div class="card-list" [fxLayout]="layoutStyle" [fxLayoutGap]="layoutGap">
-
         <mat-card class="subjects-card" *ngFor="let subject of obs | async" (click)="onExpand(subject)">
-
-            <!-- <ng-template [ngIf]="subject.collapsed"> -->
             <div fxLayout="col" fxLayoutGap="auto">
                 <mat-card-title>Name:</mat-card-title>
                 <mat-card-subtitle>{{subject.name}}</mat-card-subtitle>
@@ -89,19 +78,10 @@
                 <mat-card-title>Source:</mat-card-title>
                 <mat-card-subtitle>{{subject.source}}</mat-card-subtitle>
             </div>
-            <!-- </ng-template> -->
-
         </mat-card>
     </div>
 </div>
-
-
 <ng-template [ngIf]="selectedTab?.subject">
-    <!-- <app-actual-subject-card [id]="subject.id" (collapse)="onCollapse(subject)">
-    </app-actual-subject-card> -->
     <app-actual-subject-card [id]="selectedTab?.subject?.id">
     </app-actual-subject-card>
 </ng-template>
-
-
-    

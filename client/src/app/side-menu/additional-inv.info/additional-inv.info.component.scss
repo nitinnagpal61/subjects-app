@@ -1,59 +1,55 @@
 .mat-card-title {
   font-size: 12px;
-  font-family: Arial;
+  font-family: Tahoma;
   margin-bottom: unset;
-  font-weight: bold;
 }
 
 .mat-card-subtitle {
   margin-top: unset;
-  font-family: Arial;
+  font-family: Tahoma;
   font-size: 12px;
   margin-bottom: unset;
   color: unset;
+  font-weight: bold;
 }
 
 mat-card {
-  margin-right: 0 !important;
-  padding-right: 100px !important;
+  margin-right: 15px !important;
+  padding-right: 80px !important;
   width: 30% !important;
+  text-align: left;
   box-shadow: unset !important;
-  // text-align: left;
-  // padding-right: 30px;
+  margin-top: -2px;
 }
 
 .mat-toolbar-row,
 .mat-toolbar-single-row {
   height: 40px !important;
 }
-// }
 
 .additional-details-row {
-  padding: 0.5rem 0.8rem;
-  
+  padding-left: 0.5rem;
+  // font-family: Tahoma;
 }
 
-// .additional-info-card {
-//   text-align: left;
-// padding-right: 30px;}
-
 .investigation-links {
-  padding: 1rem 1rem 0 1.5rem;
-  
-  text-decoration: underline;
+  padding: 0rem 0rem 0rem 1.5rem;
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .selected {
-  color: blue;
-  // font-weight: bold;
+  color: #0074bb;
   font-family: Arial;
+  text-decoration: underline;
+  font-size: 13px; 
 }
 
 .unselected {
   color: black;
-  // font-weight: bold;
   font-family: Arial;
- 
+  font-size: 13px;
 }
 
 .ref-no {
@@ -64,10 +60,10 @@ mat-card {
 }
 
 .ufo {
-  font-family: Arial;
-  color: black;
-  font-size: 13px;
-  
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 7px;
 }
 
 .border {
@@ -83,10 +79,9 @@ mat-card {
 
 .crud-bttn {
   padding: 0px 4px 0px 0px;
-    height: 27px;
-    width: 27px;
-    line-height: 27px;
-  
+  height: 26px;
+  width: 26px;
+  line-height: 26px;
 }
 
 .lobclass {
@@ -97,17 +92,12 @@ mat-card {
   background-color: white;
 }
 
-// .borderclass {
-//   border: 1px solid grey;
-//   border-width: thin;
-// }
-
 .background {
   background-color: white;
 }
 
 .line {
-  padding-left: 0.5rem;
+  padding-left: 0.7rem;
   border: 1px solid grey;
   font-family: Arial;
   font-size: 12px;
@@ -116,18 +106,17 @@ mat-card {
 
 .pfi {
   font-weight: bold;
-  font-family: Arial;
+  font-family: Tahoma;
   font-size: 13px;
- 
 }
 
 .borderwhole {
   border: 1px solid grey;
-  padding: 0px 0px 3px 0px;
+  padding-left: 0.7rem;
 }
 
 .card-whole {
-  margin-left: 0.8rem;
+  margin-left: 0.5rem;
 }
 
 .name {
@@ -135,8 +124,7 @@ mat-card {
   font-family: Arial;
   padding: -1px 0px 0px 0px;
   margin-left: -0.3rem;
-  margin-top: -20px;
-
+  margin-top: -30px;
 }
 
 .id {
@@ -144,19 +132,15 @@ mat-card {
   font-family: Arial;
   padding: -1px 0px 0px 0px;
   margin-left: -0.3rem;
-  margin-top: -60px;
-
+  margin-top: -75px;
 }
 
 .namepci {
-  
-    font-size: 12px;
-    font-family: Arial;
-    padding: -1px 0px 0px 0px;
+  font-size: 12px;
+  font-family: Arial;
+  padding: -1px 0px 0px 0px;
   margin-left: -0.3rem;
-  margin-top: -20px;
-  
- 
+  margin-top: -30px;
 }
 
 .idpci {
@@ -164,23 +148,23 @@ mat-card {
   font-family: Arial;
   padding: -1px 0px 0px 0px;
   margin-left: -0.3rem;
-  margin-top: -60px;
-
+  margin-top: -75px;
 }
 
 .pci {
   font-weight: bold;
-  font-family: Arial;
+  font-family: Tahoma;
   font-size: 13px;
   margin-top: -40px;
- 
 }
 
 .info-header {
   margin-left: 0.5rem;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
- 
+  line-height: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Tahoma;
 }
 
 .greybackgroundcolor {
@@ -191,14 +175,24 @@ mat-card {
   background-color: white;
 }
 
+.backgroundcolorufo {
+  background-color: white;
+}
+
 .pfi-divider {
-      width: 37.5%;
-      top: 186px;
-      left: 15px;
+  width: 41%;
+  top: 115px;
+  left: 16px;
 }
 
 .pci-divider {
-  width: 35.5%;
-  top: 258px;
-  left: 15px;
+  width: 39%;
+  top: 187px;
+  left: 16px;
+}
+
+:host ::ng-deep {
+  .mat-toolbar-multiple-rows {
+    min-height: 30px;
+  }
 }

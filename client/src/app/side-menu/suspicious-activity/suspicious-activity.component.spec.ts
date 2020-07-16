@@ -8,9 +8,8 @@ describe('SuspiciousActivityComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SuspiciousActivityComponent ]
-    })
-    .compileComponents();
+      declarations: [SuspiciousActivityComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

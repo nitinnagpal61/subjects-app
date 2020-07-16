@@ -8,9 +8,8 @@ describe('AssociatedInvItemsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AssociatedInvItemsComponent ]
-    })
-    .compileComponents();
+      declarations: [AssociatedInvItemsComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

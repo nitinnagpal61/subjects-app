@@ -2,80 +2,71 @@
     <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="space-around">
         <mat-card class="subject-details-card">
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">TIN Type:</mat-card-title>
-                <mat-card-subtitle>{{subject.type}}</mat-card-subtitle>
+                <mat-card-title>TIN Type:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.type}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">Gender:</mat-card-title>
-                <mat-card-subtitle>{{subject.gender}}</mat-card-subtitle>
+                <mat-card-title>Gender:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.gender}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">CDD Rank Value:</mat-card-title>
-                <mat-card-subtitle>{{subject.value}}</mat-card-subtitle>
+                <mat-card-title>CDD Rank Value:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.value}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">Preferred Contact Method:</mat-card-title>
-                <mat-card-subtitle>{{subject.contact}}</mat-card-subtitle>
+                <mat-card-title>Preferred Contact Method:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.contact}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">Subject Alert ID:</mat-card-title>
-                <mat-card-subtitle>{{subject.alert}}</mat-card-subtitle>
+                <mat-card-title>Subject Alert ID:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.alert}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">SSN/TIN:</mat-card-title>
-                <mat-card-subtitle>{{subject.ssn}}</mat-card-subtitle>
+                <mat-card-title>SSN/TIN:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.ssn}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">Customer IP:</mat-card-title>
-                <mat-card-subtitle>{{subject.ip}}</mat-card-subtitle>
+                <mat-card-title>Customer IP:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.ip}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">Client Static ID / CIN:</mat-card-title>
-                <mat-card-subtitle>{{subject.cin}}</mat-card-subtitle>
+                <mat-card-title>Client Static ID / CIN:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.cin}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">Client Since Date:</mat-card-title>
-                <mat-card-subtitle>{{subject.date}}</mat-card-subtitle>
+                <mat-card-title>Client Since Date:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.date}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">NAICS Sector:</mat-card-title>
-                <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
+                <mat-card-title>NAICS Sector:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.sector}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">Age:</mat-card-title>
-                <mat-card-subtitle>{{subject.age}}</mat-card-subtitle>
-            </div>
-
-            <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">Date of Birth/Incorporated.... :</mat-card-title>
-                <mat-card-subtitle>{{subject.birth}}</mat-card-subtitle>
+                <mat-card-title>Age:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.age}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">Household ID:</mat-card-title>
-                <mat-card-subtitle>{{subject.household}}</mat-card-subtitle>
-            </div>
-
-            <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">Alternate Name:</mat-card-title>
-                <mat-card-subtitle>{{subject.name}}</mat-card-subtitle>
+                <mat-card-title>Date of Birth/Incorporated.... :</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.birth}}</mat-card-subtitle>
             </div>
             <div fxLayout="col" fxLayoutGap="auto">
-                <mat-card-title class="titlecontent">NAICS Sub Sector:</mat-card-title>
-                <mat-card-subtitle>{{subject.sub}}</mat-card-subtitle>
+                <mat-card-title>Household ID:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.household}}</mat-card-subtitle>
             </div>
-
-
-
-
-
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>Alternate Name:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.name}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto">
+                <mat-card-title>NAICS Sub Sector:</mat-card-title>
+                <mat-card-subtitle class="subtitle">{{subject.sub}}</mat-card-subtitle>
+            </div>
         </mat-card>
         <mat-card class="subject-details-card">
-
             <div fxLayout="col" fxLayoutGap="auto" class="phone-numbers-div">
                 <mat-card-title class="phone-titlemain">Phone Numbers</mat-card-title>
                 <mat-divider class="phone-divider"></mat-divider>
             </div>
-
             <div class="phone-section">
                 <div class="phone-div">
                     <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
@@ -85,7 +76,6 @@
                         </mat-card-subtitle>
                         <mat-icon class="phone-icon" svgIcon="landline"></mat-icon>
                     </div>
-
                     <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="2" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
@@ -93,7 +83,6 @@
                         </mat-card-subtitle>
                         <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
                     </div>
-
                     <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="3" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
@@ -101,7 +90,6 @@
                         </mat-card-subtitle>
                         <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
                     </div>
-
                     <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="4" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
@@ -109,7 +97,6 @@
                         </mat-card-subtitle>
                         <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
                     </div>
-
                     <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="5" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
@@ -117,7 +104,6 @@
                         </mat-card-subtitle>
                         <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
                     </div>
-
                     <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
                         <span matBadge="6" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
@@ -125,8 +111,7 @@
                         </mat-card-subtitle>
                         <mat-icon class="phone-icon" svgIcon="mobile"></mat-icon>
                     </div>
-
-                    <div fxLayout="col" fxLayoutGap="10px" class="phone-gap">
+                    <div fxLayout="col" fxLayoutGap="10px">
                         <span matBadge="7" matBadgeOverlap="false"></span>
                         <mat-card-subtitle class="phone-title">
                             {{subject.seventhPhoneNo}}
@@ -135,9 +120,6 @@
                     </div>
                 </div>
             </div>
-
-
-
             <div fxLayout="col" fxLayoutGap="auto">
                 <mat-card-title class="email-title">Emails</mat-card-title>
                 <mat-divider class="email-divider"></mat-divider>
@@ -161,445 +143,268 @@
                 </div>
                 <div fxLayout="col" fxLayoutGap="30px" class="email-gaps">
                     <span matBadge="5" matBadgeOverlap="false"></span>
-                    <mat-card-subtitle class="email-gap">{{subject.emailId}}</mat-card-subtitle>
+                    <mat-card-subtitle>{{subject.emailId}}</mat-card-subtitle>
                 </div>
             </div>
-
             <div fxLayout="col" fxLayoutGap="auto">
                 <mat-card-title class="document-title">Documents</mat-card-title>
                 <mat-divider class="document-divider"></mat-divider>
             </div>
             <div class="documents-div">
                 <span matBadge="1" matBadgeOverlap="false"></span>
-                <div fxLayout="col" fxLayoutGap="20px">
-
+                <div fxLayout="col" fxLayoutGap="57px">
                     <mat-card-title class="gap">Type:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentType}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="40px">
                     <mat-card-title class="gap">Number:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentNo}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="36px">
                     <mat-card-title class="gap">Effective:</mat-card-title>
                     <mat-card-subtitle>{{subject.effective}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="47px">
                     <mat-card-title class="gap">Sector:</mat-card-title>
                     <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="41px">
                     <mat-card-title class="gap">Expires:</mat-card-title>
                     <mat-card-subtitle>{{subject.expires}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="40px">
                     <mat-card-title class="gap">Country:</mat-card-title>
                     <mat-card-subtitle>{{subject.country}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="5px">
                     <mat-card-title class="gap">State/Province:</mat-card-title>
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px" class="gaps">
+                <div fxLayout="col" fxLayoutGap="50px" class="gaps">
                     <mat-card-title class="gap">Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
-
-
-
                 <span matBadge="2" matBadgeOverlap="false"></span>
-                <div fxLayout="col" fxLayoutGap="20px">
-
+                <div fxLayout="col" fxLayoutGap="57px">
                     <mat-card-title class="gap">Type:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentType}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="40px">
                     <mat-card-title class="gap">Number:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentNo}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="36px">
                     <mat-card-title class="gap">Effective:</mat-card-title>
                     <mat-card-subtitle>{{subject.effective}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="47px">
                     <mat-card-title class="gap">Sector:</mat-card-title>
                     <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="41px">
                     <mat-card-title class="gap">Expires:</mat-card-title>
                     <mat-card-subtitle>{{subject.expires}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="40px">
                     <mat-card-title class="gap">Country:</mat-card-title>
                     <mat-card-subtitle>{{subject.country}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="5px">
                     <mat-card-title class="gap">State/Province:</mat-card-title>
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px" class="gaps">
+                <div fxLayout="col" fxLayoutGap="50px" class="gaps">
                     <mat-card-title class="gap">Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
-
                 <span matBadge="3" matBadgeOverlap="false"></span>
-                <div fxLayout="col" fxLayoutGap="20px">
-
+                <div fxLayout="col" fxLayoutGap="57px">
                     <mat-card-title class="gap">Type:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentType}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="40px">
                     <mat-card-title class="gap">Number:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentNo}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="36px">
                     <mat-card-title class="gap">Effective:</mat-card-title>
                     <mat-card-subtitle>{{subject.effective}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="47px">
                     <mat-card-title class="gap">Sector:</mat-card-title>
                     <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="41px">
                     <mat-card-title class="gap">Expires:</mat-card-title>
                     <mat-card-subtitle>{{subject.expires}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="40px">
                     <mat-card-title class="gap">Country:</mat-card-title>
                     <mat-card-subtitle>{{subject.country}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="5px">
                     <mat-card-title class="gap">State/Province:</mat-card-title>
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px" class="gaps">
+                <div fxLayout="col" fxLayoutGap="50px" class="gaps">
                     <mat-card-title class="gap">Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
-                
                 <span matBadge="4" matBadgeOverlap="false"></span>
-                <div fxLayout="col" fxLayoutGap="20px">
-
+                <div fxLayout="col" fxLayoutGap="57px">
                     <mat-card-title class="gap">Type:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentType}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="40px">
                     <mat-card-title class="gap">Number:</mat-card-title>
                     <mat-card-subtitle>{{subject.documentNo}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="36px">
                     <mat-card-title class="gap">Effective:</mat-card-title>
                     <mat-card-subtitle>{{subject.effective}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="47px">
                     <mat-card-title class="gap">Sector:</mat-card-title>
                     <mat-card-subtitle>{{subject.sector}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="41px">
                     <mat-card-title class="gap">Expires:</mat-card-title>
                     <mat-card-subtitle>{{subject.expires}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="40px">
                     <mat-card-title class="gap">Country:</mat-card-title>
                     <mat-card-subtitle>{{subject.country}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px">
+                <div fxLayout="col" fxLayoutGap="5px">
                     <mat-card-title class="gap">State/Province:</mat-card-title>
                     <mat-card-subtitle>{{subject.state}}</mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="20px" class="gaps">
+                <div fxLayout="col" fxLayoutGap="50px">
                     <mat-card-title class="gap">Issuer:</mat-card-title>
                     <mat-card-subtitle>{{subject.issuer}}</mat-card-subtitle>
                 </div>
-
             </div>
         </mat-card>
         <mat-card class="subject-details-card">
             <div fxLayout="col" fxLayoutGap="auto" class="address-col">
-                <mat-card-title class="title">Addresses</mat-card-title>
+                <mat-card-title class="addresses-title">Addresses</mat-card-title>
                 <mat-divider class="address-divider"></mat-divider>
             </div>
             <div class="addresses-div">
-
-                <div fxLayout="col" fxLayoutGap="auto">
-
+                <span matBadge="1" matBadgeOverlap="false"></span>
+                <div class="gaps" fxLayout="col" fxLayoutGap="auto" style="padding-left: 32px;">
                     <mat-card-subtitle>
-                        <span matBadge="1" matBadgeOverlap="false"></span>
-                        <span class="landmark">{{subject.addresses[0].name}}</span>
+                        <a class="address-link"
+                            href="https://www.google.com/maps/place/221+River+St+floor+10th,+Hoboken,+NJ+07030/@40.7386666,-74.0299142,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259e1afe41b05:0x5e89082107825342!8m2!3d40.7386626!4d-74.0277255"
+                            target="new">
+                            Nice Actimize<br><span>221 RIVER ST/ FLOOR 10TH<br></span>HOBOKEN, NJ
+                            07030-5891<br><span>United States</span>
+                        </a>
                     </mat-card-subtitle>
                 </div>
-
-                <div fxLayout="col" fxLayoutGap="auto">
+                <span matBadge="2" matBadgeOverlap="false"></span>
+                <div class="gaps" fxLayout="col" fxLayoutGap="auto" style="padding-left: 32px;">
                     <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line1}}</span>
+                        <a class="address-link"
+                            href="https://www.google.com/maps/place/272+Victoria+Dock+Rd,+London,+UK/@51.5100909,0.0251221,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a8747baca9f1:0x4fd38dae3faabf61!8m2!3d51.5100876!4d0.0273108"
+                            target="new">
+                            ibis Styles London Excel<br><span>272 Victoria Dock Rd<br></span>Custom
+                            House<br><span>London, UK E16 3BY<br></span>United Kingdom
+                        </a>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <span matBadge="3" matBadgeOverlap="false"></span>
+                <div class="gaps" fxLayout="col" fxLayoutGap="auto" style="padding-left: 32px;">
                     <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line2}}</span>
+                        <a class="address-link"
+                            href="https://www.google.com/maps/place/272+Victoria+Dock+Rd,+London,+UK/@51.5100909,0.0251221,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a8747baca9f1:0x4fd38dae3faabf61!8m2!3d51.5100876!4d0.0273108"
+                            target="new">
+                            ibis Styles London Excel<br><span>272 Victoria Dock Rd<br></span>Custom
+                            House<br><span>London, UK E16 3BY<br></span>United Kingdom
+                        </a>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
+                <span matBadge="4" matBadgeOverlap="false"></span>
+                <div class="gaps" fxLayout="col" fxLayoutGap="auto" style="padding-left: 32px;">
                     <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line3}}</span>
+                        <a class="address-link"
+                            href="https://www.google.com/maps/place/272+Victoria+Dock+Rd,+London,+UK/@51.5100909,0.0251221,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a8747baca9f1:0x4fd38dae3faabf61!8m2!3d51.5100876!4d0.0273108"
+                            target="new">
+                            ibis Styles London Excel<br><span>272 Victoria Dock Rd<br></span>Custom
+                            House<br><span>London, UK E16 3BY<br></span>United Kingdom
+                        </a>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <span matBadge="5" matBadgeOverlap="false"></span>
+                <div class="gaps" fxLayout="col" fxLayoutGap="auto" style="padding-left: 32px;">
                     <mat-card-subtitle>
-                        <span matBadge="2" matBadgeOverlap="false"></span>
-                        <span class="landmark">{{subject.addresses[1].name}}</span>
+                        <a class="address-link"
+                            href="https://www.google.com/maps/place/272+Victoria+Dock+Rd,+London,+UK/@51.5100909,0.0251221,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a8747baca9f1:0x4fd38dae3faabf61!8m2!3d51.5100876!4d0.0273108"
+                            target="new">
+                            ibis Styles London Excel<br><span>272 Victoria Dock Rd<br></span>Custom
+                            House<br><span>London, UK E16 3BY<br></span>United Kingdom
+                        </a>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <span matBadge="6" matBadgeOverlap="false"></span>
+                <div class="gaps" fxLayout="col" fxLayoutGap="auto" style="padding-left: 32px;">
                     <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line1}}</span>
+                        <a class="address-link"
+                            href="https://www.google.com/maps/place/272+Victoria+Dock+Rd,+London,+UK/@51.5100909,0.0251221,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a8747baca9f1:0x4fd38dae3faabf61!8m2!3d51.5100876!4d0.0273108"
+                            target="new">
+                            ibis Styles London Excel<br><span>272 Victoria Dock Rd<br></span>Custom
+                            House<br><span>London, UK E16 3BY<br></span>United Kingdom
+                        </a>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <span matBadge="7" matBadgeOverlap="false"></span>
+                <div class="gaps" fxLayout="col" fxLayoutGap="auto" style="padding-left: 32px;">
                     <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line2}}</span>
+                        <a class="address-link"
+                            href="https://www.google.com/maps/place/272+Victoria+Dock+Rd,+London,+UK/@51.5100909,0.0251221,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a8747baca9f1:0x4fd38dae3faabf61!8m2!3d51.5100876!4d0.0273108"
+                            target="new">
+                            ibis Styles London Excel<br><span>272 Victoria Dock Rd<br></span>Custom
+                            House<br><span>London, UK E16 3BY<br></span>United Kingdom
+                        </a>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
+                <span matBadge="8" matBadgeOverlap="false"></span>
+                <div class="gaps" fxLayout="col" fxLayoutGap="auto" style="padding-left: 32px;">
                     <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line3}}</span>
+                        <a class="address-link"
+                            href="https://www.google.com/maps/place/272+Victoria+Dock+Rd,+London,+UK/@51.5100909,0.0251221,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a8747baca9f1:0x4fd38dae3faabf61!8m2!3d51.5100876!4d0.0273108"
+                            target="new">
+                            ibis Styles London Excel<br><span>272 Victoria Dock Rd<br></span>Custom
+                            House<br><span>London, UK E16 3BY<br></span>United Kingdom
+                        </a>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
+                <span matBadge="9" matBadgeOverlap="false"></span>
+                <div class="gaps" fxLayout="col" fxLayoutGap="auto" style="padding-left: 32px;">
                     <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line4}}</span>
+                        <a class="address-link"
+                            href="https://www.google.com/maps/place/272+Victoria+Dock+Rd,+London,+UK/@51.5100909,0.0251221,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a8747baca9f1:0x4fd38dae3faabf61!8m2!3d51.5100876!4d0.0273108"
+                            target="new">
+                            ibis Styles London Excel<br><span>272 Victoria Dock Rd<br></span>Custom
+                            House<br><span>London, UK E16 3BY<br></span>United Kingdom
+                        </a>
                     </mat-card-subtitle>
                 </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-
+                <span matBadge="10" matBadgeOverlap="false"></span>
+                <div fxLayout="col" fxLayoutGap="auto" style="padding-left: 32px;">
                     <mat-card-subtitle>
-                        <span matBadge="3" matBadgeOverlap="false"></span>
-                        <span class="landmark">{{subject.addresses[0].name}}</span>
-                    </mat-card-subtitle>
-                </div>
-
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line1}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line2}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line3}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span matBadge="4" matBadgeOverlap="false"></span>
-                        <span class="landmark">{{subject.addresses[1].name}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line1}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line2}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line3}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line4}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-
-                    <mat-card-subtitle>
-                        <span matBadge="5" matBadgeOverlap="false"></span>
-                        <span class="landmark">{{subject.addresses[0].name}}</span>
-                    </mat-card-subtitle>
-                </div>
-
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line1}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line2}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line3}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span matBadge="6" matBadgeOverlap="false"></span>
-                        <span class="landmark">{{subject.addresses[1].name}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line1}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line2}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line3}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line4}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-
-                    <mat-card-subtitle>
-                        <span matBadge="7" matBadgeOverlap="false"></span>
-                        <span class="landmark">{{subject.addresses[0].name}}</span>
-                    </mat-card-subtitle>
-                </div>
-
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line1}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line2}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line3}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span matBadge="8" matBadgeOverlap="false"></span>
-                        <span class="landmark">{{subject.addresses[1].name}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line1}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line2}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line3}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line4}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-
-                    <mat-card-subtitle>
-                        <span matBadge="9" matBadgeOverlap="false"></span>
-                        <span class="landmark">{{subject.addresses[0].name}}</span>
-                    </mat-card-subtitle>
-                </div>
-
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line1}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line2}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[0].line3}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span matBadge="10" matBadgeOverlap="false"></span>
-                        <span class="landmark">{{subject.addresses[1].name}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line1}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line2}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line3}}</span>
-                    </mat-card-subtitle>
-                </div>
-                <div fxLayout="col" fxLayoutGap="auto" class="gaps">
-                    <mat-card-subtitle>
-                        <span class="landmark">{{subject.addresses[1].line4}}</span>
+                        <a class="address-link"
+                            href="https://www.google.com/maps/place/272+Victoria+Dock+Rd,+London,+UK/@51.5100909,0.0251221,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a8747baca9f1:0x4fd38dae3faabf61!8m2!3d51.5100876!4d0.0273108"
+                            target="new">
+                            ibis Styles London Excel<br><span>272 Victoria Dock Rd<br></span>Custom
+                            House<br><span>London, UK E16 3BY<br></span>United Kingdom
+                        </a>
                     </mat-card-subtitle>
                 </div>
             </div>
         </mat-card>
-
     </div>
 </ng-template>
-
 <ng-template [ngIf]="!subject">
     No data found
 </ng-template>

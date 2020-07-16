@@ -1,4 +1,11 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  Output,
+  EventEmitter,
+  ViewEncapsulation
+} from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { SubjectsService } from '../subjects.service';
 
@@ -12,11 +19,11 @@ export class ActualSubjectCardComponent implements OnInit {
   subject: any;
   @Input() id: number;
 
-  constructor(private subjectsService: SubjectsService) { }
+  constructor(private subjectsService: SubjectsService) {}
 
   ngOnInit(): void {
     this.subjectsService.getSubjectDetails(this.id).subscribe(subjectDetail => {
-        this.subject = subjectDetail;
+      this.subject = subjectDetail;
     });
   }
 }

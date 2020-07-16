@@ -1,20 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatExpansionModule } from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatInputModule } from '@angular/material/input';
-import {MatDialogModule} from '@angular/material/dialog';
-import {DragDropModule} from '@angular/cdk/drag-drop';
-
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -32,14 +28,16 @@ import { CorporateInvestigationsComponent } from './side-menu/corporate-investig
 import { InvestigationHeaderComponent } from './investigation-header/investigation-header.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatBadgeModule } from '@angular/material/badge';
-import { MatPaginatorModule, MatPaginatorIntl } from '@angular/material/paginator';
+import {
+  MatPaginatorModule,
+  MatPaginatorIntl
+} from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatMenuModule } from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { ActualSubjectCardComponent } from './side-menu/subjects/actual-subject-card/actual-subject-card.component';
 import { SubjectsModule } from './side-menu/subjects/subjects.module';
-// import { TopBarComponent } from './top-bar/top-bar.component';
 import { getCustomPaginator } from './side-menu/subjects/paginator.provider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { DialogComponent } from './investigation-header/dialog/dialog.component';
@@ -92,9 +90,7 @@ import { PortalModule } from '@angular/cdk/portal';
     DragDropModule,
     PortalModule
   ],
-  providers: [
-    { provide: MatPaginatorIntl, useValue: getCustomPaginator() }
-  ],
+  providers: [{ provide: MatPaginatorIntl, useValue: getCustomPaginator() }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

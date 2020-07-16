@@ -5,10 +5,10 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SubjectsService {
-
   private url = 'http://localhost:3000';
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getSubjects = () => this.http.get(`${this.url}/subjects`);
-  getSubjectDetails = (id: number) => this.http.get(`${this.url}/subjects/${id}`);
+  getSubjectDetails = (id: number) =>
+    this.http.get(`${this.url}/subjects/${id}`);
 }

@@ -1,303 +1,286 @@
 :host ::ng-deep {
-    .mat-ink-bar {
-        display: none;
-     }
+  .mat-ink-bar {
+    display: none;
+  }
 
-     .mat-paginator-page-size {
-        display: none;
+  .mat-paginator-page-size {
+    display: none;
+  }
+
+  .mat-paginator-range-actions {
+    margin-right: -100px;
+    .mat-icon-button {
+      border: 1px solid black;
+      border-radius: unset;
+      width: 27px;
+      height: 25px;
+      line-height: 25px;
+      right: 10.7rem;
+      box-sizing: border-box;
+      position: relative;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      -webkit-tap-highlight-color: transparent;
+      overflow: visible;
+      transform: translate3d(0, 0, 0);
+      transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),
+        box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+      background-color: #fff;
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     }
+  }
 
-    .mat-paginator-range-actions {
-        margin-right: -100px;
-        .mat-icon-button {
-            border: 1px solid black;
-            border-radius: unset;
-            width: 27px;
-            height: 25px;
-            line-height: 25px;
-            right: 10.7rem;
-            box-sizing: border-box;
-            position: relative;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            cursor: pointer;
-            outline: none;
-            border: none;
-            -webkit-tap-highlight-color: transparent;
-
-            /* border-radius: 4px; */
-            overflow: visible;
-            transform: translate3d(0, 0, 0);
-            transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-            background-color: #fff;
-            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-        }
-    }
-
-    .mat-paginator-icon {
-        width: 20px;
-    }
+  .mat-paginator-icon {
+    width: 20px;
+  }
 }
 
 :host ::ng-deep .mat-paginator-container {
-            min-height: unset;
-            padding: 0;
-        }
+  min-height: unset;
+  padding: 0;
+}
 
 .mat-card-title {
-    font-size: 12px;
-    margin-bottom: unset;
-    font-family: Arial;
-    font-weight: bold;
+  font-size: 12px;
+  margin-bottom: unset;
+  font-family: Tahoma;
+  
 }
 
 .mat-card-subtitle {
-    margin-top: unset;
-    padding-left: 1rem;
-    margin-bottom: unset;
-    font-family: Arial;
-    font-size: 12px;
-    color: unset;
-    font-weight: light;
+  margin-top: unset;
+  padding-left: 1rem;
+  margin-bottom: unset;
+  font-family: Tahoma;
+  font-size: 11px;
+  color: unset;
+  font-weight: bold;
 }
 
-
 .subjects-card {
-    margin-bottom: 5px;
-    cursor: pointer;
-    padding: 5px;
-    width: 15%;
-    
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding: 5px;
+  width: 15%;
 }
 
 .card-list {
-    padding: 0rem 1rem;
-    font-family: Arial;
-    width: 100%;
+  padding: 0rem 1rem;
+  font-family: Tahoma;
+  width: 100%;
 }
 
 .subject-bttns {
-    padding: 0.5rem 1rem;
-    font-family: 'Arial Bold', 'Arial';
-    font-size: 12px;
-    width: 100%;
-    justify-content: flex-end;
-    margin-left: -216px;
-    font-weight: bold;
-    color: black;
-  
-    
-    
+  padding: 0.5rem 1rem;
+  font-family: Tahoma;
+  font-size: 12px;
+  width: 100%;
+  justify-content: flex-end;
+  margin-left: -245px;
+  font-weight: bold;
+  color: black;
 }
 
-
-
 .crud-bttn {
-    border-radius: unset !important;
-    margin-right: 4px !important;
+  border-radius: unset !important;
+  margin-right: 4px !important;
 }
 
 .subjects-title {
-    padding: 0.25rem 1rem;
-    font-weight: bold;
-    height: 50px;
+  padding: 0.25rem 1rem;
+  font-weight: bold;
+  height: 50px;
+  background-color: whitesmoke;
 }
 
 .subjects-title-text {
-    align-items: center;
-    // font-size: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #212E36;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Tahoma;
 }
 
 .mat-raised-button {
-    
-    cursor: pointer;
-    height: 24px;
-    line-height: 23px;
-    font-size: 11px;
-    padding: 0px 3px;
-    min-width: 47px;
+  cursor: pointer;
+  height: 24px;
+  line-height: 23px;
+  font-size: 11px;
+  padding: 0px 3px;
+  min-width: 47px;
 }
 
 .paginator {
-    color: black;
-    background: transparent;
+  color: black;
+  background: transparent;
 }
 
 .paginator-bttn {
-    text-align: right;
-    align-items: center;
-    width: 64rem;
-    justify-content: flex-end;
+  text-align: right;
+  align-items: center;
+  width: 64rem;
+  justify-content: flex-end;
 }
 
 .close-fullscreen-icon {
-    width: 12px;
-    height: 12px;
-    font-size: 12px;
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
 }
 
 .close-fullscreen-col {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .mat-icon {
-    fill: #0074bb;
+  fill: #0074bb;
 }
 
-.mat-toolbar-row, .mat-toolbar-single-row {
-    height: 40px;
-    
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 40px;
 }
 
 .close-icon {
-    height: 18px;
-    width: 18px;
-    line-height: 18px;
-    font-size: 16px;
-    margin-right: 10px;
-    padding: 0px 0px 12px 0px;
-    font-weight: bold;
-    
+  height: 18px;
+  width: 18px;
+  line-height: 29px;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 0px 0px 12px 0px;
+  font-weight: bold;
 }
 
+body {
+  background: #efefef;
+  font: 0.8em sans-serif;
+  margin: 0;
+}
 
-body{
-    background : #efefef;
-    font : .8em sans-serif;
-    margin: 0;
-  }
-  
-  .tab-container {
-    padding: 0;
-    max-height: 35px;
-    margin-left: -23px;
-    
-  }
-  
-  ul.tabs{
-    margin: 0;
-    list-style-type : none;
-    line-height : 30px;
-    max-height: 30px;
-    overflow: hidden;
-    display: inline-block;
-    padding-right: 20px;
-    color: black;
-    
-  }
-  
-  ul.tabs > li.active{
-    z-index: 2;
-    background: #fff;
-    
-    
-    
-  }
-  
-  ul.tabs > li.active:before{
-    border-color : transparent #efefef transparent transparent;
-  }
-  
-  
-  ul.tabs > li.active:after{
-    border-color : transparent transparent transparent #efefef;
-  }
-  
-  ul.tabs > li{
-    float : right;
-    margin-left: 1px;
-    
-    padding: 0px 0px 0px 10px;
-    height: 30px;
-    position : relative;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-    min-width: 130px;
-    max-width: 200px;
-    cursor: pointer;
-    font-family: 'Arial Bold', 'Arial';
-    font-size: 12px;
-  }
-  
-  ul.tabs > li > a{
-    display: inline-block;
-    max-width:100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-decoration: none;
-    color: #222;
-  }
-  
-  ul.tabs > li:before, ul.tabs > li:after{
-    background : transparent;
-    height: 20px;
-    width: 20px;
-    // border-radius: 100%;
-    border-width: 10px;
-    top: 0px;
-    border-style : solid;
-    position : absolute;
-  }
-  
-  ul.tabs > li:before{
-    border-color : transparent #ddd transparent transparent;
-    // -webkit-transform : rotate(48deg);
-    left: -23px;
-  }
-  
-  ul.tabs > li:after{
-    border-color : transparent transparent transparent #ddd;
-    // -webkit-transform : rotate(-48deg);
-    right: -17px;
-  }
-  
-  /* Clear Fix took for HTML 5 Boilerlate*/
-  
-  .clearfix:before, .clearfix:after { content: ""; display: table; }
-  .clearfix:after { clear: both; }
-  .clearfix { zoom: 1; }
+.tab-container {
+  padding: 0;
+  max-height: 35px;
+  margin-left: -23px;
+}
 
-  .card-visible {
-      visibility: visible;
-  }
+ul.tabs {
+  margin: 0;
+  list-style-type: none;
+  line-height: 30px;
+  max-height: 30px;
+  overflow: hidden;
+  display: inline-block;
+  padding-left: 28px;
+  color: black;
+}
 
-  .card-hidden {
-    visibility: hidden;
-  }
+ul.tabs > li.active {
+  z-index: 2;
+  background: #fff;
+}
 
-  .active-tab {
-      background-color: white;
-      border-top-right-radius: 100px 170px;
-      border-top-left-radius: 100px 90px;
-      padding: 0px 0px 10px 0px;
-  }
+ul.tabs > li.active:before {
+  border-color: transparent #efefef transparent transparent;
+}
 
-  .inactive-tab {
-    background-color: whitesmoke;
-  }
+ul.tabs > li.active:after {
+  border-color: transparent transparent transparent #efefef;
+}
 
-  .subject-tab-icon {
-    fill: #000000;
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
-    margin-right: -30px;
-    padding: 0px 0px 11px 2px;
+ul.tabs > li {
+  float: right;
+  margin-left: 1px;
+  padding: 0px 0px 0px 10px;
+  height: 30px;
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 130px;
+  max-width: 200px;
+  cursor: pointer;
+  font-family: Tahoma;
+  font-size: 12px;
+}
 
+ul.tabs > li > a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #222;
+}
 
-  }
+ul.tabs > li:before,
+ul.tabs > li:after {
+  background: transparent;
+  height: 20px;
+  width: 20px;
+  border-width: 10px;
+  top: 0px;
+  border-style: solid;
+  position: absolute;
+}
 
-  .name-label {
-    margin-top: -10px;
-    font-weight: bold;
-  }
+ul.tabs > li:before {
+  border-color: transparent #ddd transparent transparent;
+  left: -23px;
+}
 
-  
- 
+ul.tabs > li:after {
+  border-color: transparent transparent transparent #ddd;
+  right: -17px;
+}
+
+/* Clear Fix took for HTML 5 Boilerplate*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+.card-visible {
+  visibility: visible;
+}
+
+.card-hidden {
+  visibility: hidden;
+}
+
+.active-tab {
+  background-color: white;
+  border-top-right-radius: 100px 170px;
+  border-top-left-radius: 100px 90px;
+  padding: 0px 0px 10px 0px;
+}
+
+.inactive-tab {
+  background-color: whitesmoke;
+}
+
+.subject-tab-icon {
+  fill: #000000;
+  height: 15px;
+  width: 15px;
+  line-height: 35px;
+}
+
+.name-label {
+  font-weight: bold;
+}

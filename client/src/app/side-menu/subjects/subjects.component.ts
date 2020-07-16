@@ -13,15 +13,17 @@ export interface Tab {
   isMaximized?: boolean;
 }
 
+type NewType = boolean;
+
 @Component({
   selector: 'app-subjects',
   templateUrl: './subjects.component.html',
   styleUrls: ['./subjects.component.scss']
 })
 export class SubjectsComponent implements OnInit, OnDestroy {
-  collapsed: boolean = true;
-  layoutStyle: string = 'row wrap';
-  layoutGap: string = '10px';
+  collapsed: NewType = true;
+  layoutStyle = 'row wrap';
+  layoutGap = '10px';
   subjects: Subject[] = [];
   @ViewChild(MatPaginator) paginator: MatPaginator;
   obs: Observable<any>;
@@ -57,14 +59,15 @@ export class SubjectsComponent implements OnInit, OnDestroy {
     this.layoutStyle = 'row wrap';
     this.layoutGap = '10px';
     const previousTabindex = this.tabs.indexOf(tab, 0) + 1;
-    
-    if(previousTabindex >= 0) {
+
+    if (previousTabindex >= 0) {
       this.selectedTab = {...this.tabs[previousTabindex]};
       this.tabs.splice(this.tabs.indexOf(tab), 1);
     } else {
       this.selectedTab = this.tabs[0];
     }
-    
+
+    // tslint:disable-next-line: deprecation
     event.stopPropagation();
   }
 
