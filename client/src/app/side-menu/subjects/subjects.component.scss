@@ -50,7 +50,7 @@
   font-size: 12px;
   margin-bottom: unset;
   font-family: Tahoma;
-  
+  padding-left: 1rem;
 }
 
 .mat-card-subtitle {
@@ -64,10 +64,11 @@
 }
 
 .subjects-card {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   cursor: pointer;
   padding: 5px;
-  width: 15%;
+  width: 18.5%;
+  padding-right: 0rem;
 }
 
 .card-list {
@@ -155,8 +156,13 @@
   line-height: 29px;
   font-size: 16px;
   margin-right: 10px;
-  padding: 0px 0px 12px 0px;
+  padding: 0px 0px 5px 0px;
   font-weight: bold;
+}
+
+.close-icon:hover {
+      background-color: red;
+      color: white;   
 }
 
 body {
