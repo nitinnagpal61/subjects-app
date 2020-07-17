@@ -29,7 +29,7 @@ export class SubjectsComponent implements OnInit, OnDestroy {
   obs: Observable<any>;
   dataSource: MatTableDataSource<any>;
   tabs: Tab[] = [
-    { label: 'Subject', isClosable: false}
+    { label: 'Subject', isClosable: false }
   ];
   selectedTab: Tab;
 
@@ -61,7 +61,7 @@ export class SubjectsComponent implements OnInit, OnDestroy {
     const previousTabindex = this.tabs.indexOf(tab, 0) + 1;
 
     if (previousTabindex >= 0) {
-      this.selectedTab = {...this.tabs[previousTabindex]};
+      this.selectedTab = { ...this.tabs[previousTabindex] };
       this.tabs.splice(this.tabs.indexOf(tab), 1);
     } else {
       this.selectedTab = this.tabs[0];
@@ -93,5 +93,12 @@ export class SubjectsComponent implements OnInit, OnDestroy {
 
   onMinimize(tab: Tab) {
     tab.isMaximized = false;
+  }
+
+  onPageClicked() {
+    if (this.tabs.length > 1) {
+      const tab = this.tabs[this.tabs.length - 1];
+      this.selectedTab = tab;
+    }
   }
 }

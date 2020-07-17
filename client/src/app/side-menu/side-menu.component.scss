@@ -63,6 +63,7 @@
 
 .example-sidenav {
   background-color: white;
+  width: 100%;
 }
 
 .mat-drawer-inner-container {
@@ -74,4 +75,87 @@
 .mat-list-base .mat-list-item,
 .mat-list-base .mat-list-option {
   width: 170px !important;
+}
+
+:host ::ng-deep {
+  .mat-tab-body-content {
+    overflow-x: hidden !important;
+  }
+
+  .mat-ink-bar {
+    width: 3px !important ;
+  }
+
+  .mat-tab-label.mat-tab-label-active {
+    border-right: 3px solid #0074bb;
+  }
+}
+
+
+// vertical tabs
+:host {
+  >.container {
+      max-width: 1264px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      background: none;
+  }
+  ::ng-deep {
+      .mat-tab-group {
+          flex-direction: row;
+      }
+      .mat-tab-header {
+        border-bottom: none;
+      }
+      .mat-tab-header-pagination {
+          display: none !important;
+      }
+      .mat-tab-labels {
+          flex-direction: column;
+      }
+      // .mat-ink-bar {
+      //     height: 10%;
+      //     left: 98% !important;
+      // }
+      .mat-tab-body-wrapper {
+          flex: 1 1 auto;
+      }
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  flex: 1 0 auto;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#content {
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 15px;
+  width: 1264px;
+  background-color: #ffffff;
+}
+
+#content {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+#content,
+#main-content {
+  &::before,
+  &::after {
+      content: "";
+      display: table;
+  }
+  &::after {
+      clear: both;
+  }
 }

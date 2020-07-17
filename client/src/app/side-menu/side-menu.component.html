@@ -1,14 +1,48 @@
 <div class="example-container">
     <mat-drawer-container class="drawer-container" autosize>
         <mat-drawer #drawer class="example-sidenav" mode="side" opened>
-            <mat-nav-list>
+            <!-- <mat-nav-list>
                 <a [routerLinkActive]="['is-active']" mat-list-item [routerLink]="nav.route"
                     [ngClass]="selectedNav === nav ? 'item-selected' : 'item-not-selected'" (click)="onNavigate(nav)"
                     *ngFor="let nav of navLinks">{{nav.name}}</a>
-            </mat-nav-list>
+            </mat-nav-list> -->
+
+            <div class="container">
+                <div id="content">
+                    <div id="main-content">
+                        <mat-tab-group>
+                            <mat-tab label="Additional Inv. Info.">
+                                <app-additional-inv-info></app-additional-inv-info>
+                            </mat-tab>
+                            <mat-tab label="Subjects">
+                                <app-subjects></app-subjects>
+                            </mat-tab>
+                            <mat-tab label="Financial Records">
+                                <app-financial-records></app-financial-records>
+                            </mat-tab>
+                            <mat-tab label="Contacted Agencies">
+                                <app-contacted-agencies></app-contacted-agencies>
+                            </mat-tab>
+                            <mat-tab label="Associated Inv. Items">
+                                <app-associated-inv-items></app-associated-inv-items>
+                            </mat-tab>
+                            <mat-tab label="Form Filler">
+                                <app-form-filler></app-form-filler>
+                            </mat-tab>
+                            <mat-tab label="Additional Information">
+                                <app-additional-information></app-additional-information>
+                            </mat-tab>
+                            <mat-tab label="Corporate Investigations">
+                                <app-corporate-investigations></app-corporate-investigations>
+                            </mat-tab>
+                            <mat-tab label="Suspicious Activity">
+                                <app-suspicious-activity></app-suspicious-activity>>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </div>
+            </div>
         </mat-drawer>
-        <mat-drawer-content>
-            <router-outlet></router-outlet>
-        </mat-drawer-content>
+
     </mat-drawer-container>
 </div>

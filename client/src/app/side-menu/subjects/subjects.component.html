@@ -1,3 +1,4 @@
+
 <div class="subjects-title" fxLayout="row" fxLayoutGap="auto">
     <div class="subjects-title-text" fxLayout="col">Subjects</div>
     <div class="subject-bttns" fxLayout="col" fxLayoutGap="8px">
@@ -19,7 +20,7 @@
         </button>
     </div>
     <div class="paginator-bttn" fxLayout="col" fxLayoutGap="8px">
-        <mat-paginator class="paginator" [pageSizeOptions]="[10, 10]"></mat-paginator>
+        <mat-paginator class="paginator" [pageSizeOptions]="[10, 10]" (page)="onPageClicked()"></mat-paginator>
     </div>
 </div>
 <div class=tab-container>
