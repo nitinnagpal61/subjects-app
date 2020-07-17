@@ -43,39 +43,39 @@
 <div *ngIf="selectedTab === undefined || !selectedTab.isClosable" class=outer-circle>
     <div class="card-list" [fxLayout]="layoutStyle" [fxLayoutGap]="layoutGap">
         <mat-card class="subjects-card" *ngFor="let subject of obs | async" (click)="onExpand(subject)">
-            <div fxLayout="col" fxLayoutGap="auto">
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 1rem;">
                 <mat-card-title>Name:</mat-card-title>
                 <mat-card-subtitle>{{subject.name}}</mat-card-subtitle>
             </div>
-            <div fxLayout="col" fxLayoutGap="auto">
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
                 <mat-card-title>Role:</mat-card-title>
                 <mat-card-subtitle>{{subject.role}}</mat-card-subtitle>
             </div>
-            <div fxLayout="col" fxLayoutGap="auto">
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
                 <mat-card-title>Type:</mat-card-title>
                 <mat-card-subtitle>{{subject.type}}</mat-card-subtitle>
             </div>
-            <div fxLayout="col" fxLayoutGap="auto">
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
                 <mat-card-title>SSN:</mat-card-title>
                 <mat-card-subtitle>{{subject.ssn}}</mat-card-subtitle>
             </div>
-            <div fxLayout="col" fxLayoutGap="auto">
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
                 <mat-card-title>Address:</mat-card-title>
                 <mat-card-subtitle>{{subject.address}}</mat-card-subtitle>
             </div>
-            <div fxLayout="col" fxLayoutGap="auto">
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
                 <mat-card-title>City:</mat-card-title>
                 <mat-card-subtitle>{{subject.city}}</mat-card-subtitle>
             </div>
-            <div fxLayout="col" fxLayoutGap="auto">
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
                 <mat-card-title>Zip:</mat-card-title>
                 <mat-card-subtitle>{{subject.zip}}</mat-card-subtitle>
             </div>
-            <div fxLayout="col" fxLayoutGap="auto">
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
                 <mat-card-title>Phone:</mat-card-title>
                 <mat-card-subtitle>{{subject.phone}}</mat-card-subtitle>
             </div>
-            <div fxLayout="col" fxLayoutGap="auto">
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
                 <mat-card-title>Source:</mat-card-title>
                 <mat-card-subtitle>{{subject.source}}</mat-card-subtitle>
             </div>

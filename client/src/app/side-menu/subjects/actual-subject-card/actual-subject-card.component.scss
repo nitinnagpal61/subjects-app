@@ -10,11 +10,16 @@
   // font-weight: bold;
 }
 
+.subject-details-card {
+  margin-left: -3.2rem;
+}
+
 .mat-card-title {
   font-size: 11px;
   font-family: Arial;
   margin-bottom: unset;
-  font-weight: bold;
+  // font-weight: bold;
+  color: black;
 
 }
 
@@ -23,19 +28,20 @@
   font-family: Tahoma;
   font-size: 11px;
   margin-bottom: unset;
+  color: black;
   // font-weight: bold;
 }
 
 .phone-divider {
-  left: 13px;
+  left: 32px;
   top: 31px;
-  width: 88%;
+  width: 82%;
 }
 
 .email-divider {
-  left: 13px;
+  left: 31px;
   top: 161px;
-  width: 88%;
+  width: 82%;
 }
 
 .email-title {
@@ -47,15 +53,15 @@
 }
 
 .document-divider {
-  left: 13px;
+  left: 33px;
   top: 263px;
-  width: 88%;
+  width: 82%;
 }
 
 .address-divider {
-  left: 13px;
+  left: 77px;
   top: 31px;
-  width: 88%;
+  width: 66%;
 }
 
 .mat-badge {
@@ -73,7 +79,7 @@
 
 mat-card {
   margin-right: 0 !important;
-  padding: 14px !important;
+  padding: 13px !important;
   min-width: 25% !important;
   box-shadow: unset !important;
 }
@@ -97,6 +103,7 @@ mat-card {
   overflow-x: hidden;
   overflow-y: scroll;
   max-height: 393px;
+  margin-left: 4rem;
 }
 
 .gaps {
@@ -105,6 +112,7 @@ mat-card {
 
 .email-gaps {
   padding-bottom: 5px;
+  padding-left: 1rem;
 }
 
 .documents-div {
@@ -123,20 +131,19 @@ mat-card {
   max-height: 52px;
 }
 
-.gap {
-  padding-left: 1.9rem;
-}
-
 .phone-icon {
   height: 16px;
   width: 16px;
+  color: #0074bb;
+  margin-left: -1.75rem;
 }
 
-.phone-title {
-  margin-right: unset !important;
-  margin-left: 20px;
-  padding-top: 0px;
-}
+// .phone-title {
+//   margin-right: unset !important;
+//   margin-left: 25px;
+//   padding-top: 0px;
+//   color: black;
+// }
 
 // :host ::ng-deep {
 //   .mat-tab-label {
@@ -151,31 +158,39 @@ mat-card {
 // }
 
 .phone-titlemain {
-  font-family: Arial;
+  font-family: Tahoma;
   font-weight: bold;
   font-size: 12px;
-  margin-left: 0px;
+  margin-left: 19px;
+  color: black;
 }
 
 .email-title {
-  font-family: Arial;
+  font-family: Tahoma;
   font-weight: bold;
   font-size: 12px;
+  color: black;
+  padding-left: 1.1rem;
 }
 
 .email-gap {
   padding-bottom: 3px;
 }
 
+.phone-gaps {
+  padding-bottom: 3px;
+}
 .document-title {
-  font-family: Arial;
+  font-family: Tahoma;
   font-weight: bold;
   font-size: 12px;
+  color: black;
+  margin-left: 20px;
 }
 
 .phone-gap {
-  padding-top: 1px;
-  padding-bottom: 6px;
+  padding-left: 1rem;
+  padding-bottom: 5px;
 }
 
 .address-link {
@@ -184,12 +199,17 @@ mat-card {
   font-style: Arial;
 }
 
-// .subtitle {
-//   // font-weight: bold;
-//   font-size: 12px;
-//   font-family: Tahoma;
-// }
+.subtitle {
+  font-weight: bold;
+  font-size: 11px;
+  font-family: Tahoma;
+  color: black;
+}
 
 .addresses-title {
   font-size: 12px;
+  color: black;
+  font-family: Tahoma;
+  font-weight: bold;
+  margin-left: 4.1rem;
 }
