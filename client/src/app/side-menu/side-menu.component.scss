@@ -22,10 +22,6 @@
   background-color: whitesmoke !important;
 }
 
-// .item-not-selected {
-//   background-color: lightgrey !important;
-// }
-
 .is-active {
   border-right: 2px solid #0074bb !important;
 }
@@ -58,7 +54,6 @@
 
 .mat-drawer-content {
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .example-sidenav {
@@ -69,7 +64,6 @@
 .mat-drawer-inner-container {
   overflow-x: hidden !important;
   overflow-y: scroll;
-  // overflow: auto;
 }
 
 .mat-list-base .mat-list-item,
@@ -82,12 +76,11 @@
     overflow-x: hidden !important;
   }
 
-  .mat-ink-bar {
-    width: 3px !important ;
-  }
-
   .mat-tab-label.mat-tab-label-active {
-    border-right: 3px solid #0074bb;
+    border-right: 2px solid #0074bb;
+  }
+  .mat-tab-label {
+    max-width: 174px;
   }
 }
 
@@ -99,7 +92,7 @@
       width: 100%;
       margin: 0 auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       background: none;
   }
   ::ng-deep {
@@ -115,37 +108,35 @@
       .mat-tab-labels {
           flex-direction: column;
       }
-      // .mat-ink-bar {
-      //     height: 10%;
-      //     left: 98% !important;
+
+      // .mat-tab-body-wrapper {
+      //     flex: auto;
       // }
-      .mat-tab-body-wrapper {
-          flex: 1 1 auto;
-      }
   }
 }
 
 .container {
   position: relative;
   width: 100%;
-  flex: 1 0 auto;
-  margin: 0 auto;
+  flex: auto;
+  margin: auto;
   text-align: left;
 }
 
+
 #content {
   box-sizing: content-box;
-  margin: 0 auto;
+  margin: auto;
   padding: 15px;
-  width: 1264px;
+  width: 100%;
   background-color: #ffffff;
 }
 
 #content {
   width: 100%;
   background-color: #ffffff;
-  padding: 24px;
-  box-sizing: border-box;
+  padding: 0;
+  // box-sizing: border-box;
 }
 
 #content,
