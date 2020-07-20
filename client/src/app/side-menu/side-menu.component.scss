@@ -6,8 +6,8 @@
 
 .drawer-container {
   height: 100%;
-  color: #f6f7f7;
-  background-color: unset;
+  // color: white;
+  background-color: white;
 }
 
 .navLink-visible {
@@ -19,11 +19,12 @@
 }
 
 .item-selected {
-  background-color: whitesmoke !important;
+  background-color: lightgrey !important;
 }
 
 .is-active {
-  border-right: 2px solid #0074bb !important;
+  border-right: 3px solid #0074bb !important;
+  background-color: lightgrey !important;
 }
 
 .mat-expand-button {
@@ -38,23 +39,23 @@
   font-size: 12px;
 }
 
-.mat-list-base .mat-list-item,
-.mat-list-base .mat-list-option {
-  height: 35.7px;
-  font-family: Tahoma;
-  min-height: 28px;
-  font-size: 11px;
-  font-weight: bold;
-  text-align: left;  
-}
+// .mat-list-base .mat-list-item,
+// .mat-list-base .mat-list-option {
+//   height: 35.7px;
+//   font-family: Tahoma;
+//   min-height: 28px;
+//   font-size: 11px;
+//   font-weight: bold;
+//   text-align: left;  
+// }
 
-.mat-list-base {
-  padding-top: 0px;
-}
+// .mat-list-base {
+//   padding-top: 0px;
+// }
 
-.mat-drawer-content {
-  overflow-y: auto;
-}
+// .mat-drawer-content {
+//   overflow-y: auto;
+// }
 
 .example-sidenav {
   background-color: white;
@@ -77,22 +78,25 @@
   }
 
   .mat-tab-label.mat-tab-label-active {
-    border-right: 2px solid #0074bb;
+    border-right: 3px solid #0074bb;
   }
   .mat-tab-label {
     max-width: 174px;
+    padding: 0px 20px -1px 14px;
+    color: black;
   }
 }
 
 // vertical tabs
 :host {
   >.container {
-      max-width: 1264px;
+      // max-width: 1264px;
       width: 100%;
       margin: 0 auto;
       display: flex;
       justify-content: center;
       background: none;
+      
   }
   ::ng-deep {
       .mat-tab-group {
@@ -110,10 +114,12 @@
       .mat-tab-labels {
           flex-direction: column;
       }
-
-      // .mat-tab-body-wrapper {
-      //     flex: auto;
-      // }
+      .mat-tab-label {
+        color: black;
+      font-style: Tahoma;
+      font-size: 13px;
+    //  background-color: white;
+      }
   }
 }
 
@@ -129,16 +135,10 @@
 #content {
   box-sizing: content-box;
   margin: auto;
-  padding: 15px;
+  // padding: 15px;
   width: 100%;
-  background-color: #ffffff;
-}
-
-#content {
-  width: 100%;
-  background-color: #ffffff;
   padding: 0;
-  // box-sizing: border-box;
+  background-color: white;
 }
 
 #content,
