@@ -1,16 +1,10 @@
 <div class="example-container">
     <mat-drawer-container class="drawer-container" autosize>
         <mat-drawer #drawer class="example-sidenav" mode="side" opened>
-            <!-- <mat-nav-list>
-                <a [routerLinkActive]="['is-active']" mat-list-item [routerLink]="nav.route"
-                    [ngClass]="selectedNav === nav ? 'item-selected' : 'item-not-selected'" (click)="onNavigate(nav)"
-                    *ngFor="let nav of navLinks">{{nav.name}}</a>
-            </mat-nav-list> -->
-
             <div class="container">
                 <div id="content">
                     <div id="main-content">
-                        <mat-tab-group>
+                        <mat-tab-group (selectedTabChange)="onTabClick($event)">
                             <mat-tab label="Additional Inv. Info.">
                                 <app-additional-inv-info></app-additional-inv-info>
                             </mat-tab>

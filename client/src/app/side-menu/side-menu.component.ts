@@ -2,6 +2,8 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
 import { NavLink } from '../../../../common/index';
 import { SideMenuService } from './side-menu.service';
+import {Location} from '@angular/common'; 
+
 @Component({
   selector: 'app-side-menu',
   templateUrl: './side-menu.component.html',
@@ -14,7 +16,7 @@ export class SideMenuComponent implements OnInit {
   navLinks: NavLink[] = [];
   selectedNav: NavLink;
 
-  constructor(private sideMenuService: SideMenuService) {}
+  constructor(private sideMenuService: SideMenuService, private location: Location) {}
 
   ngOnInit(): void {
     this.sideMenuService.getLinks().subscribe((navLinks: NavLink[]) => {
@@ -22,14 +24,8 @@ export class SideMenuComponent implements OnInit {
     });
   }
 
-  onNavigate(nav: NavLink) {
-    this.navLinks.forEach(n => n.isVisible = false);
-    const navLink = this.navLinks.find(n => n === nav);
-    navLink.isVisible = true;
-    this.selectedNav = navLink;
-  }
-
-  getVisibility(navLink: string) {
-    return this.navLinks.find(n => n.name === navLink).isVisible;
+  onTabClick($event) {
+    const link = this.navLinks.find(n => n.name === $event.tab.textLabel);
+    this.location.replaceState(`/${link.route}`);
   }
 }
