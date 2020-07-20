@@ -84,7 +84,6 @@
   }
 }
 
-
 // vertical tabs
 :host {
   >.container {
@@ -98,6 +97,9 @@
   ::ng-deep {
       .mat-tab-group {
           flex-direction: row;
+      }
+      .mat-ink-bar {
+        height: 0px !important;
       }
       .mat-tab-header {
         border-bottom: none;

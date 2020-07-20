@@ -115,13 +115,17 @@ mat-card {
   padding-left: 1rem;
 }
 
-.titlegapclass {
-  margin-right: 10px;
-}
-.document-gaps {
-  padding-bottom: 5px;
+.doc-gaps {
+  padding-top: 5px;
   padding-left: 1rem;
+
 }
+
+.leftmarginclass {
+  margin-left: -24px;
+  padding-top: 4px;
+}
+
 .documents-div {
   overflow-x: hidden;
   overflow-y: scroll;
