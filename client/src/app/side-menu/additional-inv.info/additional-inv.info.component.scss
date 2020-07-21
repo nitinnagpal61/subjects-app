@@ -70,8 +70,8 @@
 
 mat-card {
   margin-right: 15px !important;
-  padding-right: 80px !important;
-  width: 30% !important;
+  max-width: 14rem !important;
+  min-width: 14rem !important;
   text-align: left;
   box-shadow: unset !important;
   margin-top: -2px;
