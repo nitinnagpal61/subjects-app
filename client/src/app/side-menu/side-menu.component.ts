@@ -2,7 +2,7 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
 import { NavLink } from '../../../../common/index';
 import { SideMenuService } from './side-menu.service';
-import {Location} from '@angular/common'; 
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-side-menu',

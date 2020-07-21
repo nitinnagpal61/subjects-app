@@ -2,6 +2,7 @@
   font-size: 12px;
   font-family: Tahoma;
   margin-bottom: unset;
+  text-align: left;
 }
 
 .mat-card-subtitle {
@@ -11,62 +12,16 @@
   margin-bottom: unset;
   color: unset;
   font-weight: bold;
+  text-align: right;
 }
 
-.subtitlestart {
-  padding-right: 4.8rem;
-}
+// .secondrow {
+//   padding-right: 1rem;
+// }
 
-.subtitlestart1 {
-  padding-right: 2rem;
-}
-
-.subtitlestart2 {
-  padding-right: 3.2rem;
-}
-
-.subtitlestart3 {
-  padding-right: 2.7rem;
-}
-
-.subtitlestart4 {
-  padding-right: 4.9rem;
-}
-
-.subtitlestart5 {
-  padding-right: 7.4rem;
-}
-
-.subtitlestart6 {
-  padding-right: 6.5rem;
-}
-
-.subtitlestart7 {
-  padding-right: 6.95rem;
-}
-
-.secondrow {
-  padding-right: 3rem;
-}
-
-.thirdrow {
-  padding-right: 2rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// .thirdrow {
+//   padding-right: 1rem;
+// }
 
 mat-card {
   margin-right: 15px !important;
@@ -75,6 +30,7 @@ mat-card {
   text-align: left;
   box-shadow: unset !important;
   margin-top: -2px;
+  margin-left: -8px;
 }
 
 .mat-toolbar-row,
@@ -88,7 +44,7 @@ mat-card {
 }
 
 .investigation-links {
-  padding: 0rem 0rem 0rem 1.5rem;
+  padding: 0.5rem 0rem 1rem 1rem;
   font-family: Tahoma;
   font-size: 12px;
   font-weight: bold;
@@ -118,7 +74,7 @@ mat-card {
   font-family: Tahoma;
   font-weight: bold;
   font-size: 15px;
-  padding-left: 7px;
+  padding-left: 0px;
 }
 
 .border {
@@ -152,7 +108,7 @@ mat-card {
 }
 
 .line {
-  padding-left: 0.7rem;
+  padding-left: 2rem;
   border: 1px solid grey;
   font-family: Arial;
   font-size: 12px;
@@ -167,11 +123,7 @@ mat-card {
 
 .borderwhole {
   border: 1px solid grey;
-  padding-left: 0.7rem;
-}
-
-.card-whole {
-  margin-left: 0.5rem;
+  padding-left: 2rem;
 }
 
 .name {
@@ -214,12 +166,12 @@ mat-card {
 }
 
 .info-header {
-  margin-left: 0.5rem;
   line-height: 40px;
   height: 40px;
   font-size: 18px;
   font-weight: bold;
   font-family: Tahoma;
+  padding-left: 1rem;
 }
 
 .greybackgroundcolor {
