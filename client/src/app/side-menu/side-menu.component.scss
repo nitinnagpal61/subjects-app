@@ -79,11 +79,13 @@
 
   .mat-tab-label.mat-tab-label-active {
     border-right: 3px solid #0074bb;
+    background-color: lightgray;
   }
   .mat-tab-label {
     max-width: 174px;
     padding: 0px 20px -1px 14px;
-    color: black;
+    color: black !important;
+    font-weight: bold !important;
   }
 }
 
