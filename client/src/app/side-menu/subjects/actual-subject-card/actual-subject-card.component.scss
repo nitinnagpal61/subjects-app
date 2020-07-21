@@ -11,7 +11,11 @@
 }
 
 .subject-details-card {
+<<<<<<< HEAD
   margin-left: -3.5rem;
+=======
+  margin-left: -3.2rem;
+>>>>>>> parent of 152a309... changes
 }
 
 .mat-card-title {
@@ -35,13 +39,13 @@
 .phone-divider {
   left: 32px;
   top: 31px;
-  width: 83%;
+  width: 82%;
 }
 
 .email-divider {
   left: 31px;
   top: 161px;
-  width: 83%;
+  width: 82%;
 }
 
 .email-title {
@@ -53,9 +57,9 @@
 }
 
 .document-divider {
-  left: 30px;
+  left: 33px;
   top: 263px;
-  width: 83%;
+  width: 82%;
 }
 
 .address-divider {
@@ -115,6 +119,7 @@ mat-card {
   padding-left: 1rem;
 }
 
+<<<<<<< HEAD
 .doc-gaps {
   padding-top: 5px;
   padding-left: 1rem;
@@ -126,14 +131,12 @@ mat-card {
   padding-top: 4px;
 }
 
+=======
+>>>>>>> parent of 152a309... changes
 .documents-div {
   overflow-x: hidden;
   overflow-y: scroll;
   max-height: 160px;
-}
-
-.gapclass {
-  padding-bottom: 10px;
 }
 
 .phone-numbers-div {
@@ -200,7 +203,7 @@ mat-card {
   font-weight: bold;
   font-size: 12px;
   color: black;
-  margin-left: 17px;
+  margin-left: 20px;
 }
 
 .phone-gap {

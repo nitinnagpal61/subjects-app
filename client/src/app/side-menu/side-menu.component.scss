@@ -22,6 +22,10 @@
   background-color: lightgrey !important;
 }
 
+// .item-not-selected {
+//   background-color: lightgrey !important;
+// }
+
 .is-active {
   border-right: 3px solid #0074bb !important;
   background-color: lightgrey !important;
@@ -53,9 +57,16 @@
 //   padding-top: 0px;
 // }
 
+<<<<<<< HEAD
 // .mat-drawer-content {
 //   overflow-y: auto;
 // }
+=======
+.mat-drawer-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+>>>>>>> parent of 152a309... changes
 
 .example-sidenav {
   background-color: white;
@@ -65,6 +76,7 @@
 .mat-drawer-inner-container {
   overflow-x: hidden !important;
   overflow-y: scroll;
+  // overflow: auto;
 }
 
 .mat-list-base .mat-list-item,
@@ -77,6 +89,7 @@
     overflow-x: hidden !important;
   }
 
+<<<<<<< HEAD
   .mat-tab-label.mat-tab-label-active {
     border-right: 3px solid #0074bb;
   }
@@ -84,6 +97,14 @@
     max-width: 174px;
     padding: 0px 20px -1px 14px;
     color: black;
+=======
+  .mat-ink-bar {
+    width: 3px !important ;
+  }
+
+  .mat-tab-label.mat-tab-label-active {
+    border-right: 3px solid #0074bb;
+>>>>>>> parent of 152a309... changes
   }
 }
 
@@ -94,7 +115,7 @@
       width: 100%;
       margin: 0 auto;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       background: none;
       
   }
@@ -114,11 +135,20 @@
       .mat-tab-labels {
           flex-direction: column;
       }
+<<<<<<< HEAD
       .mat-tab-label {
         color: black;
       font-style: Tahoma;
       font-size: 13px;
     //  background-color: white;
+=======
+      // .mat-ink-bar {
+      //     height: 10%;
+      //     left: 98% !important;
+      // }
+      .mat-tab-body-wrapper {
+          flex: 1 1 auto;
+>>>>>>> parent of 152a309... changes
       }
   }
 }
@@ -126,19 +156,32 @@
 .container {
   position: relative;
   width: 100%;
-  flex: auto;
-  margin: auto;
+  flex: 1 0 auto;
+  margin: 0 auto;
   text-align: left;
 }
 
-
 #content {
   box-sizing: content-box;
+<<<<<<< HEAD
   margin: auto;
   // padding: 15px;
   width: 100%;
   padding: 0;
   background-color: white;
+=======
+  margin: 0 auto;
+  padding: 15px;
+  width: 1264px;
+  background-color: #ffffff;
+}
+
+#content {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 24px;
+  box-sizing: border-box;
+>>>>>>> parent of 152a309... changes
 }
 
 #content,
