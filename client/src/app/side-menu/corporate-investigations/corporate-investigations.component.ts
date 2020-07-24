@@ -10,3 +10,5 @@ export class CorporateInvestigationsComponent implements OnInit {
 
   ngOnInit(): void {}
 }
+
+// no changes

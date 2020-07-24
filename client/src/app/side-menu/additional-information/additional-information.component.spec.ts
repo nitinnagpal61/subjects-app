@@ -22,3 +22,5 @@ describe('AdditionalInformationComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+// no changes

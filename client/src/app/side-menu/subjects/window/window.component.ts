@@ -77,3 +77,6 @@ export class WindowComponent implements AfterViewInit, OnChanges {
     host.attach(this.templatePortal);
   }
 }
+
+
+// no changes

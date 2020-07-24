@@ -6,3 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['dialog.component.scss']
   })
   export class DialogComponent {}
+
+// no changes

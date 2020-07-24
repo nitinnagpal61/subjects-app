@@ -22,3 +22,5 @@ describe('WindowComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+// no changes

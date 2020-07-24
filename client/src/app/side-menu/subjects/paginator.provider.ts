@@ -23,3 +23,5 @@ export function getCustomPaginator() {
   paginator.getRangeLabel = rangeLabel;
   return paginator;
 }
+
+// no changes

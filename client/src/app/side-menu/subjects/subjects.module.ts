@@ -19,3 +19,5 @@ import { ActualSubjectCardComponent } from './actual-subject-card/actual-subject
   // declarations: [WindowComponent]
 })
 export class SubjectsModule {}
+
+// no changes

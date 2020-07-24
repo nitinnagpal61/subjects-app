@@ -27,3 +27,5 @@ export class ActualSubjectCardComponent implements OnInit {
     });
   }
 }
+
+// no changes

@@ -10,3 +10,5 @@ export class AdditionalInformationComponent implements OnInit {
 
   ngOnInit(): void {}
 }
+
+// no changes

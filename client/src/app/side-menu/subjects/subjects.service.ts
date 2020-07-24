@@ -12,3 +12,6 @@ export class SubjectsService {
   getSubjectDetails = (id: number) =>
     this.http.get(`${this.url}/subjects/${id}`);
 }
+
+
+// no changes

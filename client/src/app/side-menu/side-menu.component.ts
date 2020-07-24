@@ -29,3 +29,6 @@ export class SideMenuComponent implements OnInit {
     this.location.replaceState(`/${link.route}`);
   }
 }
+
+
+// no changes

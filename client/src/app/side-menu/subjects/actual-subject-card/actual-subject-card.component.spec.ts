@@ -22,3 +22,6 @@ describe('ActualSubjectCardComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
+// no changes
